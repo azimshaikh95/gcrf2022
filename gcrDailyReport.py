@@ -131,7 +131,7 @@ def prizeWinners(limit):
 if (sidebarContent == "Progress Report"):
     with(header):
         st.image('images/banner.png', use_column_width=True)
-        st.markdown("<h1 style='text-align: center'><b>Daily Progress Report 🌩  \n LJ Institute of Engineering & Technology, Ahmedabad</b></h1>", unsafe_allow_html=True)
+        st.markdown("<h1 style='text-align: center'><b>Daily Progress Report 🌩  \n" "LJ Institute of Engineering & Technology, Ahmedabad</b></h1>", unsafe_allow_html=True)
         st.write("Last Updated On: " + date + "-2022")
         st.write("#####")
 
@@ -312,8 +312,8 @@ elif (sidebarContent == "Milestone Leaderboard"):
                 st.write("#####")
 
         with(cred):
-            st.markdown('<body class= "last" >Developed & Managed By: <a href="https://www.linkedin.com/in/kshitij-sangar/">Kshitij Sangar</a> & <a href="https://www.linkedin.com/in/dhanrajdc7/">Dhanraj Chavan</a></body>',unsafe_allow_html=True)
-            #st.write("Developed & Managed By : Kshitij Sangar & Dhanraj Chavan")
+            st.markdown('<body class= "last" >Developed & Managed By: <a href="https://in.linkedin.com/in/mohammedazim-shaikh">MohammedAzim Shaikh</a></body>',unsafe_allow_html=True)
+            #st.write("Developed & Managed By : MohammedAzim Shaikh")
     elif (textInput != "" and status == False):
         st.error("Sorry, we won't be able to show you the Milestone Achievers unless and untill you are a Participant under GCRF Program LJ Institute of Engineering & Technology, Ahmedabad")
 
