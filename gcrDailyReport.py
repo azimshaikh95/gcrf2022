@@ -131,7 +131,7 @@ def prizeWinners(limit):
 if (sidebarContent == "Progress Report"):
     with(header):
         st.image('images/banner.png', use_column_width=True)
-        st.markdown("<h1 style='text-align: center'><b>Daily Progress Report 🌩</b></h1>")
+        st.markdown("<h1 style='text-align: center'><b>Daily Progress Report 🌩</b></h1>", unsafe_allow_html=True)
         st.markdown("<h1 style='text-align: center'><b>LJ Institute of Engineering & Technology, Ahmedabad</b></h1>", unsafe_allow_html=True)
         st.write("Last Updated On: " + date + "-2022")
         st.write("#####")
