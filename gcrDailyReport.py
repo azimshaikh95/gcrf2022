@@ -7,10 +7,10 @@ import plotly.graph_objects as go
 date = "04-05"
 
 #Program Variables
-header = st.beta_container()
-login = st.beta_container()
-body = st.beta_container()
-owners = st.beta_container()
+header = st.container()
+login = st.container()
+body = st.container()
+owners = st.container()
 
 #Reading the file
 data = pd.read_csv("data/" + date + ".csv")
@@ -131,8 +131,8 @@ def prizeWinners(limit):
 if (sidebarContent == "Progress Report"):
     with(header):
         st.image('images/banner.png', use_column_width=True)
-        st.markdown("<h1 style='text-align: center'><b>Daily Progress Report 🌩 KIT Kolhapur</b></h1>", unsafe_allow_html=True)
-        st.write("Last Updated On: " + date + "-2021")
+        st.markdown("<h1 style='text-align: center'><b>Daily Progress Report 🌩 LJ Institute of Engineering & Technology, Ahmedabad</b></h1>", unsafe_allow_html=True)
+        st.write("Last Updated On: " + date + "-2022")
         st.write("#####")
 
     with(login):
@@ -199,14 +199,14 @@ if (sidebarContent == "Progress Report"):
 
     with(owners):
         st.write("####")
-        st.markdown('<body class= "last" >Developed & Managed By: <a href="https://www.linkedin.com/in/kshitij-sangar/">Kshitij Sangar</a> & <a href="https://www.linkedin.com/in/dhanrajdc7/">Dhanraj Chavan</a></body>', unsafe_allow_html=True)
-        #st.write("Developed & Managed By : Kshitij Sangar & Dhanraj Chavan")
+        st.markdown('<body class= "last" >Developed & Managed By: <a href="https://in.linkedin.com/in/mohammedazim-shaikh">MohammedAzim Shaikh</a></body>', unsafe_allow_html=True)
+        #st.write("Developed & Managed By : MohammedAzim Shaikh")
 
 #Milestone Leaderboard Page
 elif (sidebarContent == "Milestone Leaderboard"):
     with(header):
         st.image('images/banner.png', use_column_width=True)
-        st.markdown("<h1><b>Milestone Leaderboard 🏃‍♂️ KIT Kolhapur</b></h1>", unsafe_allow_html=True)
+        st.markdown("<h1><b>Milestone Leaderboard 🏃‍♂️ LJIET Ahmedabad</b></h1>", unsafe_allow_html=True)
         st.write("Last Updated On: " + date + "-2021")
         st.write("#####")
 
@@ -244,11 +244,11 @@ elif (sidebarContent == "Milestone Leaderboard"):
         if( i == textInput):
             status = True
     if(textInput != "" and status):
-        m4 = st.beta_container()
-        m3 = st.beta_container()
-        m2 = st.beta_container()
-        m1 = st.beta_container()
-        cred = st.beta_container()
+        m4 = st.container()
+        m3 = st.container()
+        m2 = st.container()
+        m1 = st.container()
+        cred = st.container()
 
         df["level"] = 0
         for i in range(len(df)):
@@ -315,7 +315,7 @@ elif (sidebarContent == "Milestone Leaderboard"):
             st.markdown('<body class= "last" >Developed & Managed By: <a href="https://www.linkedin.com/in/kshitij-sangar/">Kshitij Sangar</a> & <a href="https://www.linkedin.com/in/dhanrajdc7/">Dhanraj Chavan</a></body>',unsafe_allow_html=True)
             #st.write("Developed & Managed By : Kshitij Sangar & Dhanraj Chavan")
     elif (textInput != "" and status == False):
-        st.error("Sorry, we won't be able to show you the Milestone Achievers unless and untill you are a Participant under GCRF Program KIT's College of Engineering, Kolhapur")
+        st.error("Sorry, we won't be able to show you the Milestone Achievers unless and untill you are a Participant under GCRF Program LJ Institute of Engineering & Technology, Ahmedabad")
 
 elif (sidebarContent == "Generate Badge"):
     with(header):
@@ -374,7 +374,7 @@ elif (sidebarContent == "Generate Badge"):
         * Right click on the Image and select save image as to Download the file
         * Then do share on your social media handles by tagging us as your Facilitator and Google Cloud India, also use `#GoogleCloudReady` tag. Google Cloud team closely monitor this tag :smile: :tada:
         """)
-        st.info("Made With ❤️ by [Dhanraj Chavan](https://www.linkedin.com/dhanrajdc7) & [Kshitij Sangar](https://www.linkedin.com/in/kshitij-sangar/)")
+        st.info("Made With ❤️ by [MohammedAzim Shaikh](https://in.linkedin.com/in/mohammedazim-shaikh)")
 
 else:
     with(header):
@@ -382,14 +382,14 @@ else:
         st.markdown("<h1><b>GoogleCloudReady Program Resources</b></h1>", unsafe_allow_html=True)
         st.markdown("<hr>", unsafe_allow_html=True)
 
-        st.subheader("**Program Deadline: 10 June, 2021**")
+        st.subheader("**Program Deadline: 25 June, 2022**")
 
         st.subheader("**Important Links**")
         st.write("🌐 [GCR Program Site](https://bit.ly/crf-site)")
         st.write("📁 [Program Syllabus](https://bit.ly/crf-syllabus)")
-        st.write("✅ [Solution Videos](https://docs.google.com/document/d/1B0iHlOd2LkuOW1j7dpfSW_GFAzR_jhUX-WnuqSwrXUA/edit)")
+        #st.write("✅ [Solution Videos](https://docs.google.com/document/d/1B0iHlOd2LkuOW1j7dpfSW_GFAzR_jhUX-WnuqSwrXUA/edit)")
 
         st.subheader("**Prizes**")
         st.image('images/prizes.png', use_column_width=True)
 
-        st.info("Made With ❤️ by [Dhanraj Chavan](https://www.linkedin.com/dhanrajdc7) & [Kshitij Sangar](https://www.linkedin.com/in/kshitij-sangar/)")
+        st.info("Made With ❤️ by [MohammedAzim Shaikh](https://in.linkedin.com/in/mohammedazim-shaikh)")
