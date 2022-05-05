@@ -149,7 +149,7 @@ if (sidebarContent == "Progress Report"):
 
             st.write("**Enrollment Status:** " + str(df["Enrolment Status"][tindex]))
             st.write("**EmailID:** " + str(df["Student Email"][tindex]))
-            st.write("[View Qwiklabs Profile URL](" + str(df["Qwiklabs Profile URL"][tindex]) + ")")
+            st.write("[View Google Cloud Skills Boost Profile URL](" + str(df["Google Cloud Skills Boost Profile URL"][tindex]) + ")")
             st.write("**Institution:** " + str(df["Institution"][tindex]))
 
             st.markdown("<hr>", unsafe_allow_html=True)
