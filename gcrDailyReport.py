@@ -166,7 +166,7 @@ if (sidebarContent == "Progress Report"):
             #Milestone1
             quest, skillbg, per = milestoneCal(10, 5, tindex)
             #per = int(((quest+skillbg)/12)*100)
-            st.subheader("Milestone1 :    " + str(per) +"% Completed\n Quests: " + str(quest)+ "/8, Skill Badge: " + str(skillbg)+ "/4")
+            st.subheader("Milestone1 :    " + str(per) +"% Completed\n Quests: " + str(quest)+ "/10, Skill Badge: " + str(skillbg)+ "/5")
             if(quest >= 10 and skillbg >= 5):
                 st.write("🥳 Congratulations! You have completed your 1st Milestone 🎊🎊🎊")
             else:
@@ -174,7 +174,7 @@ if (sidebarContent == "Progress Report"):
 
             #Milestone2
             quest, skillbg, per = milestoneCal(20, 10, tindex)
-            st.subheader("Milestone2 :    " + str(per) +"% Completed\n Quests: " + str(quest) + "/16, Skill Badge: " + str(skillbg) + "/8")
+            st.subheader("Milestone2 :    " + str(per) +"% Completed\n Quests: " + str(quest) + "/20, Skill Badge: " + str(skillbg) + "/10")
             if (quest >= 20 and skillbg >= 10):
                 st.write("🥳 Congratulations! You have completed your 2nd Milestone 🎊🎊🎊")
             else:
@@ -182,7 +182,7 @@ if (sidebarContent == "Progress Report"):
 
             # Milestone3
             quest, skillbg, per = milestoneCal(30, 15, tindex)
-            st.subheader("Milestone3 :    " + str(per) +"% Completed\n Quests: " + str(quest) + "/24, Skill Badge: " + str(skillbg) + "/12")
+            st.subheader("Milestone3 :    " + str(per) +"% Completed\n Quests: " + str(quest) + "/30, Skill Badge: " + str(skillbg) + "/15")
             if (quest == 30 and skillbg == 15):
                 st.write("🥳 Congratulations! You have completed your 3rd Milestone 🎊🎊🎊")
             else:
@@ -190,7 +190,7 @@ if (sidebarContent == "Progress Report"):
 
             # Ultimate Milestone
             quest, skillbg, per = milestoneCal(40, 20, tindex)
-            st.subheader("Ultimate Milestone :    " + str(per) +"% Completed\n Quests: " + str(quest) + "/30, Skill Badge: " + str(skillbg) + "/15")
+            st.subheader("Ultimate Milestone :    " + str(per) +"% Completed\n Quests: " + str(quest) + "/40, Skill Badge: " + str(skillbg) + "/20")
             if (quest >= 40 and skillbg >= 20):
                 st.write("🥳 Congratulations! You have completed you Ultimate Milestone 🎊🎊🎊")
             else:
