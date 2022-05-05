@@ -51,13 +51,13 @@ def findMilestoneLevel(tindex):
     cquest = int(df["# of Quests Completed"][tindex])
     cskillbg = int(df["# of Skill Badges Completed"][tindex])
 
-    if (cquest >= 8 and cskillbg >= 4):
+    if (cquest >= 10 and cskillbg >= 5):
         level = 1
-    if (cquest >= 16 and cskillbg >= 8):
+    if (cquest >= 20 and cskillbg >= 10):
         level = 2
-    if (cquest >= 24 and cskillbg >= 12):
-        level = 3
     if (cquest >= 30 and cskillbg >= 15):
+        level = 3
+    if (cquest >= 40 and cskillbg >= 20):
         level = 4
 
     return level
