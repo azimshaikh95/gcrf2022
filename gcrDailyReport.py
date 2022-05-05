@@ -256,13 +256,13 @@ elif (sidebarContent == "Milestone Leaderboard"):
             quests = df["# of Quests Completed"][i]
             badges = df["# of Skill Badges Completed"][i]
             level=0
-            if (quests >= 8 and badges >= 4):
+            if (quests >= 10 and badges >= 5):
                 level = 1
-            if (quests >= 16 and badges >= 8):
+            if (quests >= 20 and badges >= 10):
                 level = 2
-            if (quests >= 24 and badges >= 12):
-                level = 3
             if (quests >= 30 and badges >= 15):
+                level = 3
+            if (quests >= 40 and badges >= 20):
                 level = 4
             df["level"][i] = level
 
