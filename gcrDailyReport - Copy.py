@@ -81,7 +81,7 @@ def showStats():
         if (qCount == 0 and sCount == 0):
             inactive += 1
 
-        if (qCount < 10 or sCount < 5):
+        if (qCount < 8 or sCount < 4):
             if qCount == 0:
                 if sCount >= 1:
                     m0Count += 1
@@ -93,13 +93,13 @@ def showStats():
             if (qCount > 0 and sCount > 0):
                 m0Count += 1
 
-        if (qCount >= 10 and sCount >= 5):
+        if (qCount >= 8 and sCount >= 4):
             level = 1
-        if (qCount >= 20 and sCount >= 10):
+        if (qCount >= 16 and sCount >= 8):
             level = 2
-        if (qCount >= 30 and sCount >= 15):
+        if (qCount >= 24 and sCount >= 12):
             level = 3
-        if (qCount >= 40 and sCount >= 20):
+        if (qCount >= 30 and sCount >= 15):
             level = 4
 
         if level == 1:
@@ -218,8 +218,7 @@ elif (sidebarContent == "Milestone Leaderboard"):
 
     status = False
 
-    if (textInput == "azim@ljku.edu.in" or textInput == "azim" or textInput == "azim@ljp" or textInput == "jayniyati2233@gmail.com" or textInput == "kirtankp1902@gmail.com"):
-    
+    if textInput == "azim@ljku.edu.in":
         ml0, ml1, ml2, ml3, ml4, questTotal, skillbgTotal, inactiveCount = showStats()
 
         labels = ['Milestone0', 'Milestone1', 'Milestone2', 'Milestone3', 'Milestone4', 'Inactive']
