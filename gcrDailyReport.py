@@ -390,6 +390,7 @@ else:
         st.subheader("**Important Links**")
         st.write("🌐 [GCR Program Site](https://bit.ly/crf-site)")
         st.write("📁 [Program Syllabus](https://bit.ly/crf-syllabus)")
+        #st.write("✅ [Solution Videos](https://docs.google.com/document/d/1MKLH88xd8YjW9qdGHTiWQ2CP3KvB9B8FWYEYwfOrTA8/view)")
         #st.write("✅ [Solution Videos](https://docs.google.com/document/d/1B0iHlOd2LkuOW1j7dpfSW_GFAzR_jhUX-WnuqSwrXUA/edit)")
 
         st.subheader("**Prizes**")
