@@ -218,7 +218,7 @@ elif (sidebarContent == "Milestone Leaderboard"):
 
     status = False
 
-    if textInput == "infytracer@gmail.com":
+    if textInput == "azim@ljku.edu.in":
         ml0, ml1, ml2, ml3, ml4, questTotal, skillbgTotal, inactiveCount = showStats()
 
         labels = ['Milestone0', 'Milestone1', 'Milestone2', 'Milestone3', 'Milestone4', 'Inactive']
