@@ -21,8 +21,8 @@ for i in range(len(df["Student Email"])):
 
 
 #WebApp -- "Milestone Leaderboard"
-sidebarContent = st.sidebar.radio("Menu", ["Progress Report", "Milestone Leaderboard", "Program Resources"])
-#sidebarContent = st.sidebar.radio("Menu", ["Progress Report", "Milestone Leaderboard", "Generate Badge", "Program Resources"])
+#sidebarContent = st.sidebar.radio("Menu", ["Progress Report", "Milestone Leaderboard", "Program Resources"])
+sidebarContent = st.sidebar.radio("Menu", ["Progress Report", "Milestone Leaderboard", "Generate Badge", "Program Resources"])
 #Progress Report Page
 st.markdown("""
 <style>
@@ -318,7 +318,7 @@ elif (sidebarContent == "Milestone Leaderboard"):
             st.markdown('<body class= "last" >Developed & Managed By: <a href="https://in.linkedin.com/in/mohammedazim-shaikh">MohammedAzim Shaikh</a></body>',unsafe_allow_html=True)
             #st.write("Developed & Managed By : MohammedAzim Shaikh")
     elif (textInput != "" and status == False):
-        st.error("Sorry, we won't be able to show you the Milestone Achievers unless and untill you are a Participant under GCRF Program LJ Institute of Engineering & Technology, Ahmedabad")
+        st.error("Sorry, we won't be able to show you the Milestone Achievers unless and until you are a Participant under GCRF Program LJ Institute of Engineering & Technology, Ahmedabad")
 
 elif (sidebarContent == "Generate Badge"):
     with(header):
