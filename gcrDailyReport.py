@@ -4,7 +4,7 @@ import pandas as pd
 import plotly.graph_objects as go
 
 #Variable Names
-date = "04-05"
+date = "07-05"
 
 #Program Variables
 header = st.container()
@@ -160,38 +160,38 @@ if (sidebarContent == "Progress Report"):
 
             quest, skillbg, per = milestoneCal(40, 40, tindex)
             st.subheader("You have completed " + str(quest) + " Quests and " + str(skillbg) +" Skill Badges.")
-            if(quest >= 8 and skillbg >= 4):
+            if(quest >= 10 and skillbg >= 5):
                 st.balloons()
 
             #Milestone1
-            quest, skillbg, per = milestoneCal(8, 4, tindex)
+            quest, skillbg, per = milestoneCal(10, 5, tindex)
             #per = int(((quest+skillbg)/12)*100)
-            st.subheader("Milestone1 :    " + str(per) +"% Completed\n Quests: " + str(quest)+ "/8, Skill Badge: " + str(skillbg)+ "/4")
-            if(quest >= 8 and skillbg >= 4):
+            st.subheader("Milestone1 :    " + str(per) +"% Completed\n Quests: " + str(quest)+ "/10, Skill Badge: " + str(skillbg)+ "/5")
+            if(quest >= 10 and skillbg >= 5):
                 st.write("🥳 Congratulations! You have completed your 1st Milestone 🎊🎊🎊")
             else:
                 st.progress(per)
 
             #Milestone2
-            quest, skillbg, per = milestoneCal(16, 8, tindex)
-            st.subheader("Milestone2 :    " + str(per) +"% Completed\n Quests: " + str(quest) + "/16, Skill Badge: " + str(skillbg) + "/8")
-            if (quest >= 16 and skillbg >= 8):
+            quest, skillbg, per = milestoneCal(20, 10, tindex)
+            st.subheader("Milestone2 :    " + str(per) +"% Completed\n Quests: " + str(quest) + "/20, Skill Badge: " + str(skillbg) + "/10")
+            if (quest >= 20 and skillbg >= 10):
                 st.write("🥳 Congratulations! You have completed your 2nd Milestone 🎊🎊🎊")
             else:
                 st.progress(per)
 
             # Milestone3
-            quest, skillbg, per = milestoneCal(24, 12, tindex)
-            st.subheader("Milestone3 :    " + str(per) +"% Completed\n Quests: " + str(quest) + "/24, Skill Badge: " + str(skillbg) + "/12")
-            if (quest == 24 and skillbg == 12):
+            quest, skillbg, per = milestoneCal(30, 15, tindex)
+            st.subheader("Milestone3 :    " + str(per) +"% Completed\n Quests: " + str(quest) + "/30, Skill Badge: " + str(skillbg) + "/15")
+            if (quest == 30 and skillbg == 15):
                 st.write("🥳 Congratulations! You have completed your 3rd Milestone 🎊🎊🎊")
             else:
                 st.progress(per)
 
             # Ultimate Milestone
-            quest, skillbg, per = milestoneCal(30, 15, tindex)
-            st.subheader("Ultimate Milestone :    " + str(per) +"% Completed\n Quests: " + str(quest) + "/30, Skill Badge: " + str(skillbg) + "/15")
-            if (quest >= 30 and skillbg >= 15):
+            quest, skillbg, per = milestoneCal(40, 20, tindex)
+            st.subheader("Ultimate Milestone :    " + str(per) +"% Completed\n Quests: " + str(quest) + "/40, Skill Badge: " + str(skillbg) + "/20")
+            if (quest >= 40 and skillbg >= 20):
                 st.write("🥳 Congratulations! You have completed you Ultimate Milestone 🎊🎊🎊")
             else:
                 st.progress(per)
@@ -218,7 +218,7 @@ elif (sidebarContent == "Milestone Leaderboard"):
 
     status = False
 
-    if textInput == "infytracer@gmail.com":
+    if textInput == "azim@ljku.edu.in":
         ml0, ml1, ml2, ml3, ml4, questTotal, skillbgTotal, inactiveCount = showStats()
 
         labels = ['Milestone0', 'Milestone1', 'Milestone2', 'Milestone3', 'Milestone4', 'Inactive']
