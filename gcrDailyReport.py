@@ -332,7 +332,9 @@ elif (sidebarContent == "Milestone Leaderboard"):
             
     elif (textInput == "azim@ljku.edu.in" or textInput == "azim" or textInput == "azim@ljp" or textInput == "jayniyati2233@gmail.com" or textInput == "kirtankp1902@gmail.com"):
         st.snow()
-        st.error("Dear Facilitator, Please find the above progress for LJ Institute of Engineering & Technology, Ahmedabad.")
+        st.info("Dear Facilitator, Please find the above progress for LJ Institute of Engineering & Technology, Ahmedabad.")
+        st.success('This is a success message!')
+        st.warning('This is a warning')
 
     elif (textInput != "" and status == False):
         st.error("Sorry, we won't be able to show you the Milestone Achievers unless and until you are a Participant under GCRF Program LJ Institute of Engineering & Technology, Ahmedabad.")
