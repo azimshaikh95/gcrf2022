@@ -251,7 +251,7 @@ elif (sidebarContent == "Milestone Leaderboard"):
         st.write("**Inactive Students:** " + str(inactiveCount))
         st.write("**Total Students Enrolled:** " + str(ml0 + ml1 + ml2 + ml3 + ml4 + inactiveCount))
         st.plotly_chart(fig)
-        status = True
+        
 
 
 
@@ -329,6 +329,10 @@ elif (sidebarContent == "Milestone Leaderboard"):
         with(cred):
             st.markdown('<body class= "last" >Developed & Managed By: <a href="https://in.linkedin.com/in/mohammedazim-shaikh">MohammedAzim Shaikh</a></body>',unsafe_allow_html=True)
             #st.write("Developed & Managed By : MohammedAzim Shaikh")
+            
+    elif (textInput == "azim@ljku.edu.in" or textInput == "azim" or textInput == "azim@ljp" or textInput == "jayniyati2233@gmail.com" or textInput == "kirtankp1902@gmail.com"):
+        st.error("Hi, we won't be able to show you the Milestone Achievers unless and until you are a Participant under GCRF Program LJ Institute of Engineering & Technology, Ahmedabad")
+
     elif (textInput != "" and status == False):
         st.error("Sorry, we won't be able to show you the Milestone Achievers unless and until you are a Participant under GCRF Program LJ Institute of Engineering & Technology, Ahmedabad")
 
