@@ -8,41 +8,6 @@ import plotly.graph_objects as go
 from datetime import date
 today = date.today()
 
-#Added by Azim2
-import streamlit as st
-from fpdf import FPDF
-import base64
-
-report_text = "## **📊 Facilitator Stats: ** " + today.strftime("%B %d, %Y")
-        "####"
-        "**No. of Quest completions:** " + str(questTotal)
-        "**No. of Skill Badge completions:** " + str(skillbgTotal)
-        "**Total Count:** " + str(questTotal + skillbgTotal)
-        "**Milestone 1 Achievers:** " + str(ml1)
-        "**Milestone 2 Achievers:** " + str(ml2)
-        "**Milestone 3 Achievers:** " + str(ml3)
-        "**Milestone 4 Achievers:** " + str(ml4)
-        "**Total Achievers:** " + str(ml1 + ml2 + ml3 + ml4)
-        "**Milestone 1 In Progress:** " + str(ml0)
-        "**Inactive Students:** " + str(inactiveCount)
-        "**Total Students Enrolled:** " + str(ml0 + ml1 + ml2 + ml3 + ml4 + inactiveCount)
-
-
-
-def create_download_link(val, filename):
-    b64 = base64.b64encode(val)  # val looks like b'...'
-    return f'<a href="data:application/octet-stream;base64,{b64.decode()}" download="{filename}.pdf">Download file</a>'
-
-if export_as_pdf:
-    pdf = FPDF()
-    pdf.add_page()
-    pdf.set_font('Arial', 'B', 16)
-    pdf.cell(40, 10, report_text)
-    
-    html = create_download_link(pdf.output(dest="S").encode("latin-1"), "test")
-
-    st.markdown(html, unsafe_allow_html=True)
-
 
 #Variable Names
 date = "08-05"
@@ -272,7 +237,7 @@ elif (sidebarContent == "Milestone Leaderboard"):
         
       
         
-        st.write("## **📊 Facilitator Stats: ** " + today.strftime("%B %d, %Y"))
+        st.write("## **📊 Facilitator Stats:** " + today.strftime("%B %d, %Y"))
         st.write("####")
         st.write("**No. of Quest completions:** " + str(questTotal))
         st.write("**No. of Skill Badge completions:** " + str(skillbgTotal))
