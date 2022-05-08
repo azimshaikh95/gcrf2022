@@ -251,6 +251,7 @@ elif (sidebarContent == "Milestone Leaderboard"):
         st.write("**Inactive Students:** " + str(inactiveCount))
         st.write("**Total Students Enrolled:** " + str(ml0 + ml1 + ml2 + ml3 + ml4 + inactiveCount))
         st.plotly_chart(fig)
+        status = True
 
 
 
