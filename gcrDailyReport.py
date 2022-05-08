@@ -235,9 +235,7 @@ elif (sidebarContent == "Milestone Leaderboard"):
         fig = go.Figure(data=[go.Pie(labels=labels, values=values)])
         fig.update_traces(hoverinfo='label+percent', textinfo='value', marker=dict(colors=colors, line=dict(color='#000000', width=1)))
         
-        figv2 = go.Figure(data=[go.bar(labels=labels, values=values)])
-        figv2.update_traces(hoverinfo='label+percent', textinfo='value', marker=dict(colors=colors, line=dict(color='#000000', width=1)))
-        
+      
         
         st.write("## **📊 Facilitator Stats: ** " + today.strftime("%B %d, %Y"))
         st.write("####")
@@ -253,7 +251,7 @@ elif (sidebarContent == "Milestone Leaderboard"):
         st.write("**Inactive Students:** " + str(inactiveCount))
         st.write("**Total Students Enrolled:** " + str(ml0 + ml1 + ml2 + ml3 + ml4 + inactiveCount))
         st.plotly_chart(fig)
-        st.plotly_chart(figv2)
+
 
 
     for i in df["Student Email"]:
