@@ -331,11 +331,9 @@ elif (sidebarContent == "Milestone Leaderboard"):
             #st.write("Developed & Managed By : MohammedAzim Shaikh")
             
     elif (textInput == "azim@ljku.edu.in" or textInput == "azim" or textInput == "azim@ljp" or textInput == "jayniyati2233@gmail.com" or textInput == "kirtankp1902@gmail.com"):
-        with st.spinner('Wait for it...'):
-            time.sleep(5)
-        st.success('Done!')
-        #st.snow()
-        #st.info("Dear Facilitator, Please find the above progress for LJ Institute of Engineering & Technology, Ahmedabad.")
+
+        st.snow()
+        st.info("Dear Facilitator, Please find the above progress for LJ Institute of Engineering & Technology, Ahmedabad.")
         
 
     elif (textInput != "" and status == False):
