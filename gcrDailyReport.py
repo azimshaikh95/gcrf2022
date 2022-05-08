@@ -228,7 +228,7 @@ elif (sidebarContent == "Milestone Leaderboard"):
 
         fig = go.Figure(data=[go.Pie(labels=labels, values=values)])
         fig.update_traces(hoverinfo='label+percent', textinfo='value', marker=dict(colors=colors, line=dict(color='#000000', width=1)))
-        st.write("## **📊 Facilitator Stats**")
+        st.write("## **📊 Facilitator Stats**" + date)
         st.write("####")
         st.write("**No. of Quest completions:** " + str(questTotal))
         st.write("**No. of Skill Badge completions:** " + str(skillbgTotal))
