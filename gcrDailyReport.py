@@ -331,10 +331,11 @@ elif (sidebarContent == "Milestone Leaderboard"):
             #st.write("Developed & Managed By : MohammedAzim Shaikh")
             
     elif (textInput == "azim@ljku.edu.in" or textInput == "azim" or textInput == "azim@ljp" or textInput == "jayniyati2233@gmail.com" or textInput == "kirtankp1902@gmail.com"):
-        st.error("Hi, we won't be able to show you the Milestone Achievers unless and until you are a Participant under GCRF Program LJ Institute of Engineering & Technology, Ahmedabad")
+        st.snow()
+        st.error("Dear Facilitator, Please find the above progress for LJ Institute of Engineering & Technology, Ahmedabad.")
 
     elif (textInput != "" and status == False):
-        st.error("Sorry, we won't be able to show you the Milestone Achievers unless and until you are a Participant under GCRF Program LJ Institute of Engineering & Technology, Ahmedabad")
+        st.error("Sorry, we won't be able to show you the Milestone Achievers unless and until you are a Participant under GCRF Program LJ Institute of Engineering & Technology, Ahmedabad.")
 
 elif (sidebarContent == "Generate Badge"):
     with(header):
