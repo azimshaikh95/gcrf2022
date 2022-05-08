@@ -21,8 +21,8 @@ def create_download_link(val, filename):
 if export_as_pdf:
     pdf = FPDF()
     pdf.add_page()
-    pdf.set_font('Arial', 'B', 16)
-	pdf.cell(40,10,'📊 Facilitator Stats:', border = 0, ln = 1, align = '', fill = False, link = '')
+    pdf.set_font('Arial','B',16)
+    pdf.cell(40,10,hello_world)
     
     html = create_download_link(pdf.output(dest="S").encode("latin-1"), "test")
 
