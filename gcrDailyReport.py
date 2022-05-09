@@ -3,6 +3,7 @@ from PIL import Image
 import pandas as pd
 import plotly.graph_objects as go
 
+st.set_page_config(layout="centered", page_icon="☁️", page_title="GoogleCloudReady Progress Report")
 
 #Added by Azim
 from datetime import date
