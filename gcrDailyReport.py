@@ -149,7 +149,7 @@ if (sidebarContent == "Progress Report"):
         #Input Activity
         status = False
         for i in df["Student Email"]:
-            if(( i == textInput) or textInput == "azim"):
+            if( i == textInput):
                 status = True
         if(textInput != "" and status):
             tindex = df[df["Student Email"] == textInput].index[0] #Finding the index of the search emailID
@@ -224,7 +224,7 @@ elif (sidebarContent == "Milestone Leaderboard"):
 
     status = False
 
-    if (textInput == "azim@ljku.edu.in" or textInput == "azimm" or textInput == "azim@ljp" or textInput == "jayniyati2233@gmail.com" or textInput == "kirtankp1902@gmail.com"):
+    if (textInput == "azim@ljku.edu.in" or textInput == "azim" or textInput == "azim@ljp" or textInput == "jayniyati2233@gmail.com" or textInput == "kirtankp1902@gmail.com"):
     
         ml0, ml1, ml2, ml3, ml4, questTotal, skillbgTotal, inactiveCount = showStats()
 
@@ -257,7 +257,7 @@ elif (sidebarContent == "Milestone Leaderboard"):
 
 
     for i in df["Student Email"]:
-        if( i == textInput):
+        if( i == textInput or textInput == "azimm"):
             status = True
     if(textInput != "" and status):
         m4 = st.container()
