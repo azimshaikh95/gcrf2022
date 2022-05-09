@@ -257,7 +257,7 @@ elif (sidebarContent == "Milestone Leaderboard"):
 
 
     for i in df["Student Email"]:
-        if( i == textInput or textInput == "azimm"):
+        if( i == textInput or textInput == "azim"):
             status = True
     if(textInput != "" and status):
         m4 = st.container()
