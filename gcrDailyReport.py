@@ -335,6 +335,7 @@ elif (sidebarContent == "Milestone Leaderboard"):
 
         st.snow()
         st.info("Dear Facilitator, Please find the above progress for LJ Institute of Engineering & Technology, Ahmedabad.")
+        status = True
         
 
     elif (textInput != "" and status == False):
