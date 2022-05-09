@@ -259,7 +259,7 @@ elif (sidebarContent == "Milestone Leaderboard"):
     for i in df["Student Email"]:
         if( i == textInput):
             status = True
-    if(( textInput == "azim"):
+    if((textInput != "" and status) or textInput = "azim"):
         m4 = st.container()
         m3 = st.container()
         m2 = st.container()
