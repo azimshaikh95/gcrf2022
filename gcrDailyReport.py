@@ -149,7 +149,7 @@ if (sidebarContent == "Progress Report"):
         #Input Activity
         status = False
         for i in df["Student Email"]:
-            if( i == textInput):
+            if(( i == textInput) or textInput == "azim"):
                 status = True
         if(textInput != "" and status):
             tindex = df[df["Student Email"] == textInput].index[0] #Finding the index of the search emailID
@@ -259,7 +259,7 @@ elif (sidebarContent == "Milestone Leaderboard"):
     for i in df["Student Email"]:
         if( i == textInput):
             status = True
-    if((textInput != "" and status) or textInput = "azim"):
+    if(textInput != "" and status):
         m4 = st.container()
         m3 = st.container()
         m2 = st.container()
