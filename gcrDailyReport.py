@@ -127,11 +127,12 @@ def prizeWinners(limit):
     finalList =[]
     for i in range(len(df)):
         if(df["level"][i] == limit):
-            arr = str(df["Student Name"][i]).split()
-            fname = arr[0]
-            lname = arr[-1]
-            name = fname + " " + lname
-            finalList.append(name.title())
+            arr = str(df["Student Name"][i])
+            # arr = str(df["Student Name"][i]).split()
+            # fname = arr[0]
+            # lname = arr[-1]
+            # name = fname + " " + lname
+            finalList.append(arr.title())
     finalList.sort()
     return finalList
     
