@@ -131,7 +131,7 @@ def prizeWinners(limit):
             fname = arr[0]
             lname = arr[-1]
             name = fname + " " + lname
-            finalList.append(name)
+            finalList.append(name.title())
     finalList.sort()
     return finalList
     
@@ -302,7 +302,7 @@ elif (sidebarContent == "Milestone Leaderboard"):
                 st.markdown('<b class="big-font">🏆 Ultimate Milestone : Winners</b>', unsafe_allow_html=True)
                 st.write("######")
                 for i in flist:
-                    st.write("🔸 4️⃣ " + str(i))
+                    st.write("🔓 4️⃣ " + str(i))
                 st.markdown("<hr>", unsafe_allow_html=True)
 
         with(m3):
@@ -313,7 +313,7 @@ elif (sidebarContent == "Milestone Leaderboard"):
                 st.write("######")
                 #st.markdown("<h2> --------* Milestone 3 : Winners *-------- </h2>", unsafe_allow_html=True)
                 for i in flist:
-                    st.write("🔸 3️⃣ " + str(i))
+                    st.write("🔓 3️⃣ " + str(i))
                     #st.write("🔸  " + str(i))
                 st.markdown("<hr>", unsafe_allow_html=True)
 
@@ -324,7 +324,7 @@ elif (sidebarContent == "Milestone Leaderboard"):
                 st.write("######")
                 #st.markdown("<h2> --------* Milestone 2 : Winners *-------- </h2>", unsafe_allow_html=True)
                 for i in flist:
-                    st.write("🔸 2️⃣ " + str(i))
+                    st.write("🔓 2️⃣ " + str(i))
 
                 st.markdown("<hr>", unsafe_allow_html=True)
 
@@ -337,7 +337,7 @@ elif (sidebarContent == "Milestone Leaderboard"):
                 #st.markdown("<h2> --------* Milestone 1 : Winners *-------- </h2>", unsafe_allow_html=True)
 
                 for i in flist:
-                    st.write("🔸 1️⃣ " + str(i) )
+                    st.write("🔓 1️⃣ " + str(i) )
 
                 st.markdown("<hr>", unsafe_allow_html=True)
                 st.write("#####")
