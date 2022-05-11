@@ -125,7 +125,6 @@ def showStats():
 
 def prizeWinners(limit):
     finalList =[]
-    publicURL =[]
     for i in range(len(df)):
         if(df["level"][i] == limit):
             arr = str(df["Student Name"][i])
@@ -134,8 +133,7 @@ def prizeWinners(limit):
             # fname = arr[0]
             # lname = arr[-1]
             # name = fname + " " + lname
-            finalList.append(arr.title())
-            publicURL.append(URL)
+            finalList.append(arr.title())            
             
     finalList.sort()    
     return finalList, publicURL
@@ -313,9 +311,9 @@ elif (sidebarContent == "Milestone Leaderboard"):
                 st.markdown("<hr>", unsafe_allow_html=True)
 
         with(m3):
-            flist , publicURL = prizeWinners(3)
+            flist = prizeWinners(3)
             # st.subheader(m3_names)
-            if (len(flist[0]) != 0):
+            if (len(flist) != 0):
                 st.markdown('<b class="big-font">🏆 Milestone 3 : Winners</b>', unsafe_allow_html=True)
                 st.write("######")
                 #st.markdown("<h2> --------* Milestone 3 : Winners *-------- </h2>", unsafe_allow_html=True)
