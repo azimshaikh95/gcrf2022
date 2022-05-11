@@ -125,19 +125,19 @@ def showStats():
 
 def prizeWinners(limit):
     finalList =[]
+    publicURL =[]
     for i in range(len(df)):
         if(df["level"][i] == limit):
             arr = str(df["Student Name"][i])
-            publicURL = str(df["Google Cloud Skills Boost Profile URL"][i])
-                        # arr = str(df["Student Name"][i]).split()
+            URL = str(df["Google Cloud Skills Boost Profile URL"][i])
+            # arr = str(df["Student Name"][i]).split()
             # fname = arr[0]
             # lname = arr[-1]
             # name = fname + " " + lname
             finalList.append(arr.title())
-            publicURL.append(publicURL.title())
+            publicURL.append(URL)
             
-    finalList.sort()
-    publicURL.sort()
+    finalList.sort()    
     return finalList, publicURL
     
     
