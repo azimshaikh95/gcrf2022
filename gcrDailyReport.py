@@ -315,12 +315,12 @@ elif (sidebarContent == "Milestone Leaderboard"):
         with(m3):
             flist , publicURL = prizeWinners(3)
             # st.subheader(m3_names)
-            if (len(flist) != 0):
+            if (len(flist[0]) != 0):
                 st.markdown('<b class="big-font">🏆 Milestone 3 : Winners</b>', unsafe_allow_html=True)
                 st.write("######")
                 #st.markdown("<h2> --------* Milestone 3 : Winners *-------- </h2>", unsafe_allow_html=True)
-                for i in flist:
-                    st.write("🔓 3️⃣ " + str(i)[1])
+                for i in flist[0]:
+                    st.write("🔓 3️⃣ " + str(i))
                     #st.write("🔸  " + str(i))
                 st.markdown("<hr>", unsafe_allow_html=True)
 
