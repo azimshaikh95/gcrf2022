@@ -421,9 +421,28 @@ elif (sidebarContent == "Generate Badge"):
         """)
         st.info("Made With ❤️ by [MohammedAzim Shaikh](https://in.linkedin.com/in/mohammedazim-shaikh)")
 
+elif (sidebarContent == "Program Resources"):  
+    with(header):
+        st.image('images/banner.png', use_column_width=True)
+        st.markdown("<h1><b>GoogleCloudReady Program Resources</b></h1>", unsafe_allow_html=True)
+        st.markdown("<hr>", unsafe_allow_html=True)
+
+        st.subheader("**Program Deadline: 25 June, 2022**")
+
+        st.subheader("**Important Links**")
+        st.write("🌐 [GCR Program Site](https://bit.ly/crf-site)")
+        st.write("📁 [Program Syllabus](https://bit.ly/crf-syllabus)")
+        #st.write("✅ [Solution Videos](https://docs.google.com/document/d/1MKLH88xd8YjW9qdGHTiWQ2CP3KvB9B8FWYEYwfOrTA8/view)")
+        #st.write("✅ [Solution Videos](https://docs.google.com/document/d/1B0iHlOd2LkuOW1j7dpfSW_GFAzR_jhUX-WnuqSwrXUA/edit)")
+
+        st.subheader("**Prizes**")
+        st.image('images/prizes.png', use_column_width=True)
+
+        st.info("Made With ❤️ by [MohammedAzim Shaikh](https://in.linkedin.com/in/mohammedazim-shaikh)")
 
 
-elif (sidebarContent == "Admin Zone"):
+# elif (sidebarContent == "Admin Zone"):
+else:
     with(header):
         st.image('images/banner.png', use_column_width=True)
         st.markdown("<h1><b>Facilitator Leaderboard 🏃‍♂️ LJIET Ahmedabad</b></h1>", unsafe_allow_html=True)
@@ -468,30 +487,3 @@ elif (sidebarContent == "Admin Zone"):
         export_as_pdf = st.button("Export Report")
         
         
-
-
-
-
-
-
-
-
-
-else:
-    with(header):
-        st.image('images/banner.png', use_column_width=True)
-        st.markdown("<h1><b>GoogleCloudReady Program Resources</b></h1>", unsafe_allow_html=True)
-        st.markdown("<hr>", unsafe_allow_html=True)
-
-        st.subheader("**Program Deadline: 25 June, 2022**")
-
-        st.subheader("**Important Links**")
-        st.write("🌐 [GCR Program Site](https://bit.ly/crf-site)")
-        st.write("📁 [Program Syllabus](https://bit.ly/crf-syllabus)")
-        #st.write("✅ [Solution Videos](https://docs.google.com/document/d/1MKLH88xd8YjW9qdGHTiWQ2CP3KvB9B8FWYEYwfOrTA8/view)")
-        #st.write("✅ [Solution Videos](https://docs.google.com/document/d/1B0iHlOd2LkuOW1j7dpfSW_GFAzR_jhUX-WnuqSwrXUA/edit)")
-
-        st.subheader("**Prizes**")
-        st.image('images/prizes.png', use_column_width=True)
-
-        st.info("Made With ❤️ by [MohammedAzim Shaikh](https://in.linkedin.com/in/mohammedazim-shaikh)")
