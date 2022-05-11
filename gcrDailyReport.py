@@ -474,7 +474,7 @@ elif (sidebarContent == "Admin Zone"):
         
         
             ###
-            def fmilestoneCal(tquest, tskillbg):
+def fmilestoneCal(tquest, tskillbg):
     frquest = int(questTotal)
     frskillbg = int(skillbgTotal)
     #if (int(df["# of Quests Completed"][tindex]) >= tquest):
