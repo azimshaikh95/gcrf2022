@@ -473,8 +473,8 @@ elif (sidebarContent == "Admin Zone"):
         export_as_pdf = st.button("Export Report")
         
         
-        elif (textInput == "" ):
-            sst.write("aa")
+        elif ( textInput == "" ):
+            st.write("aa")
         
         else:
             
