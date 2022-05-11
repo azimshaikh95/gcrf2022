@@ -136,7 +136,7 @@ def prizeWinners(limit):
             finalList.append(arr.title())            
             
     finalList.sort()    
-    return finalList, publicURL
+    return finalList
     
     
 # def prizeWinners(limit):
