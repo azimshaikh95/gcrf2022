@@ -456,7 +456,7 @@ elif (sidebarContent == "Admin Zone"):
     status = False
 
 
-    if (textInput == "azim@ljku.edu.in" or textInput == "azim" or textInput == "azim@ljp" or textInput == "jayniyati2233@gmail.com" or textInput == "kirtankp1902@gmail.com"):
+    if (textInput == "ljku" ):
     
         ml0, ml1, ml2, ml3, ml4, questTotal, skillbgTotal, inactiveCount = showStats()
 
