@@ -138,12 +138,16 @@ def prizeWinners(limit):
             
     finalList.sort()    
     return finalList
+
     
 def fmsc(tq, ts):
-    frquest = int(tq)
-    frskillbg = int(ts)
-    
-    per = int(((frquest + frskillbg) / (tquest+tskillbg)) * 100)
+    frquest = str(questTotal)
+    frskillbg = str(skillbgTotal)
+    if (str(questTotal) >= tq):
+        frquest = quest
+    if (str(skillbgTotal) >= ts):
+        frskillbg = skillbg
+    fper = int(((frquest + frskillbg) / (tq+ts)) * 100)
     return frquest, frskillbg, fper
     
     
