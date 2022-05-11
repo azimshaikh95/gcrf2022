@@ -301,7 +301,7 @@ elif (sidebarContent == "Milestone Leaderboard"):
             df["level"][i] = level
 
         with(m4):
-            flist ,  = prizeWinners(4)
+            flist  = prizeWinners(4)
             
             
             # st.subheader(m4_names)
