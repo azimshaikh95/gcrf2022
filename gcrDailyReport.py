@@ -473,11 +473,12 @@ elif (sidebarContent == "Admin Zone"):
         export_as_pdf = st.button("Export Report")
         
         
-        elif (textInput != "" ):
-            st.error("Sorry, we won't be able to enter you to Admin Zone unless and until you are a Facilitator at LJ Institute of Engineering & Technology, Ahmedabad.")
+        elif (textInput == "" ):
+            sst.write("aa")
         
         else:
-            st.write("aa")
+            
+            st.error("Sorry, we won't be able to enter you to Admin Zone unless and until you are a Facilitator at LJ Institute of Engineering & Technology, Ahmedabad.")
         
 
 
