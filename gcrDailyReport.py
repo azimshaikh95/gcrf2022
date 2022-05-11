@@ -319,7 +319,7 @@ elif (sidebarContent == "Milestone Leaderboard"):
                 st.markdown('<b class="big-font">🏆 Milestone 3 : Winners</b>', unsafe_allow_html=True)
                 st.write("######")
                 #st.markdown("<h2> --------* Milestone 3 : Winners *-------- </h2>", unsafe_allow_html=True)
-                for i in flist[0]:
+                for i in flist:
                     st.write("🔓 3️⃣ " + str(i))
                     #st.write("🔸  " + str(i))
                 st.markdown("<hr>", unsafe_allow_html=True)
