@@ -17,7 +17,7 @@ def fmsc(tq, ts):
                 st.balloons()
 
             #Milestone1
-            tq, ts, tp = fmsc((750, 750)            
+            tq, ts, tp = fmsc(750, 750)            
             st.subheader("Milestone1 :    " + str(tp) +"% Completed\n Quests: " + str(tq)+ "/10, Skill Badge: " + str(ts)+ "/5")
             if(tq >= 500 and ts >= 250):
                 st.write("🥳 Congratulations! You have completed your 1st Milestone 🎊🎊🎊")
