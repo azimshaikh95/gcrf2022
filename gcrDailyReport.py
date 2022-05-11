@@ -323,7 +323,7 @@ elif (sidebarContent == "Milestone Leaderboard"):
                 #st.markdown("<h2> --------* Milestone 1 : Winners *-------- </h2>", unsafe_allow_html=True)
 
                 for i in flist:
-                    st.write("🔸  " + str(i) + + str(df["Google Cloud Skills Boost Profile URL"][tindex]))
+                    st.write("🔸  " + str(i) + str(df["Google Cloud Skills Boost Profile URL"][tindex]) )
 
                 st.markdown("<hr>", unsafe_allow_html=True)
                 st.write("#####")
