@@ -133,7 +133,8 @@ def prizeWinners(limit):
             # fname = arr[0]
             # lname = arr[-1]
             # name = fname + " " + lname
-            finalList.append(arr.title())            
+            name = arr.title() + " " + URL
+            finalList.append(name)            
             
     finalList.sort()    
     return finalList
