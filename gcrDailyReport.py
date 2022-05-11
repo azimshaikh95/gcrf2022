@@ -451,7 +451,10 @@ elif (sidebarContent == "Admin Zone"):
         fig = go.Figure(data=[go.Pie(labels=labels, values=values)])
         fig.update_traces(hoverinfo='label+percent', textinfo='value', marker=dict(colors=colors, line=dict(color='#000000', width=1)))
         
-      
+        st.snow()
+        st.info("Dear Facilitator, Please find the progress for LJ Institute of Engineering & Technology, Ahmedabad.")
+        st.write("Last Updated On: " + date + "-2022")
+        status = True
         
         st.write("## **📊 Facilitator Stats:** " + today.strftime("%B %d, %Y"))
         st.write("####")
@@ -469,6 +472,9 @@ elif (sidebarContent == "Admin Zone"):
         st.plotly_chart(fig)
         export_as_pdf = st.button("Export Report")
         
+        
+        elif (textInput != "" and status == False):
+            st.error("Sorry, we won't be able to enter you to Admin Zone unless and until you are a Facilitator at LJ Institute of Engineering & Technology, Ahmedabad.")
         
 
 
