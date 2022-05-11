@@ -452,9 +452,8 @@ elif (sidebarContent == "Admin Zone"):
         fig.update_traces(hoverinfo='label+percent', textinfo='value', marker=dict(colors=colors, line=dict(color='#000000', width=1)))
         
         st.snow()
-        st.info("Dear Facilitator, Please find the progress for LJ Institute of Engineering & Technology, Ahmedabad - Updated On: " + date + "-2022")
-        # st.write("Last Updated On: " + date + "-2022")
-        status = True
+        st.info("Dear Facilitator, Please find the progress for LJ Institute of Engineering & Technology, Ahmedabad - Updated On: " + date + "-2022")        
+        
         
         st.write("## **📊 Facilitator Stats:** " + today.strftime("%B %d, %Y"))
         st.write("####")
