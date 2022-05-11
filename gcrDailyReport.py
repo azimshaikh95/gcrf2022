@@ -301,7 +301,7 @@ elif (sidebarContent == "Milestone Leaderboard"):
             df["level"][i] = level
 
         with(m4):
-            flist , publicURL = prizeWinners(4)
+            flist = prizeWinners(4)
             
             
             # st.subheader(m4_names)
@@ -309,18 +309,18 @@ elif (sidebarContent == "Milestone Leaderboard"):
                 st.markdown('<b class="big-font">🏆 Ultimate Milestone : Winners</b>', unsafe_allow_html=True)
                 st.write("######")
                 for i in flist:
-                    st.write("🔓 4️⃣ " + str(i)[0])
+                    st.write("🔓 4️⃣ " + str(i))
                 st.markdown("<hr>", unsafe_allow_html=True)
 
         with(m3):
-            flist = prizeWinners(3)
+            flist , publicURL = prizeWinners(3)
             # st.subheader(m3_names)
             if (len(flist) != 0):
                 st.markdown('<b class="big-font">🏆 Milestone 3 : Winners</b>', unsafe_allow_html=True)
                 st.write("######")
                 #st.markdown("<h2> --------* Milestone 3 : Winners *-------- </h2>", unsafe_allow_html=True)
                 for i in flist:
-                    st.write("🔓 3️⃣ " + str(i))
+                    st.write("🔓 3️⃣ " + str(i)[0])
                     #st.write("🔸  " + str(i))
                 st.markdown("<hr>", unsafe_allow_html=True)
 
