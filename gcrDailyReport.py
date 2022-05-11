@@ -125,18 +125,20 @@ def showStats():
 
 def prizeWinners(limit):
     finalList =[]
-    
+    publicURL =[]
     for i in range(len(df)):
         if(df["level"][i] == limit):
-            arr = str(df["Student Name"][i])            
-            # arr = str(df["Student Name"][i]).split()
+            arr = str(df["Student Name"][i])
+            URL = str(df["Google Cloud Skills Boost Profile URL"][i])
+                        # arr = str(df["Student Name"][i]).split()
             # fname = arr[0]
             # lname = arr[-1]
             # name = fname + " " + lname
-            finalList.append(arr.title())           
+            finalList.append(arr.title())
+            publicURL.append(URL)
             
     finalList.sort()    
-    return finalList
+    return finalList, publicURL
     
     
 # def prizeWinners(limit):
@@ -299,7 +301,7 @@ elif (sidebarContent == "Milestone Leaderboard"):
             df["level"][i] = level
 
         with(m4):
-            flist = prizeWinners(4)
+            flist , publicURL = prizeWinners(4)
             
             
             # st.subheader(m4_names)
@@ -307,7 +309,7 @@ elif (sidebarContent == "Milestone Leaderboard"):
                 st.markdown('<b class="big-font">🏆 Ultimate Milestone : Winners</b>', unsafe_allow_html=True)
                 st.write("######")
                 for i in flist:
-                    st.write("🔓 4️⃣ " + str(i))
+                    st.write("🔓 4️⃣ " + str(i)[0])
                 st.markdown("<hr>", unsafe_allow_html=True)
 
         with(m3):
