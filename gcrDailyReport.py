@@ -298,7 +298,9 @@ elif (sidebarContent == "Milestone Leaderboard"):
             df["level"][i] = level
 
         with(m4):
-            flist = prizeWinners(4)
+            flist, publicURL = prizeWinners(4)
+            
+            
             # st.subheader(m4_names)
             if (len(flist) != 0):
                 st.markdown('<b class="big-font">🏆 Ultimate Milestone : Winners</b>', unsafe_allow_html=True)
