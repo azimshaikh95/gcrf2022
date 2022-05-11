@@ -441,7 +441,7 @@ else:
         st.info("Made With ❤️ by [MohammedAzim Shaikh](https://in.linkedin.com/in/mohammedazim-shaikh)")
 
 
-elif (sidebarContent == "Admin Zone"):
+if (sidebarContent == "Admin Zone"):
     with(header):
         st.image('images/banner.png', use_column_width=True)
         st.markdown("<h1><b>Facilitator Leaderboard 🏃‍♂️ LJIET Ahmedabad</b></h1>", unsafe_allow_html=True)
