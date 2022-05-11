@@ -1,58 +1,50 @@
-def fmilestoneCal(tquest, tskillbg):
-    frquest = int(questTotal)
-    frskillbg = int(skillbgTotal)
-    #if (int(df["# of Quests Completed"][tindex]) >= tquest):
-        frquest = tquest
-    #if (int(df["# of Skill Badges Completed"][tindex]) >= tskillbg):
-        frskillbg = tskillbg
+def fmsc(tq, ts):
+    frquest = int(tq)
+    frskillbg = int(ts)
+    
     per = int(((frquest + frskillbg) / (tquest+tskillbg)) * 100)
     return frquest, frskillbg, fper
 
-
-
-        if(textInput != "" and status):
-            
+           
 
             st.markdown("<hr>", unsafe_allow_html=True)
 
             st.markdown('<b class="big-font">Facilitator Milestone Status</b>', unsafe_allow_html=True)
 
-            quest, skillbg, per = fmilestoneCal(750, 750)
-            st.subheader("You have completed " + str(quest) + " Quests and " + str(skillbg) +" Skill Badges.")
-            if(quest >= 500 and skillbg >= 250):
+            tq, ts, tp = fmsc(750, 750)
+            st.subheader("You have completed " + str(tq) + " Quests and " + str(ts) +" Skill Badges.")
+            if(tq >= 500 and ts >= 250):
                 st.balloons()
 
             #Milestone1
-            quest, skillbg, per = fmilestoneCal((750, 750)            
-            st.subheader("Milestone1 :    " + str(per) +"% Completed\n Quests: " + str(quest)+ "/10, Skill Badge: " + str(skillbg)+ "/5")
-            if(quest >= 500 and skillbg >= 250):
+            tq, ts, tp = fmsc((750, 750)            
+            st.subheader("Milestone1 :    " + str(tp) +"% Completed\n Quests: " + str(tq)+ "/10, Skill Badge: " + str(ts)+ "/5")
+            if(tq >= 500 and ts >= 250):
                 st.write("🥳 Congratulations! You have completed your 1st Milestone 🎊🎊🎊")
             else:
-                st.progress(per)
+                st.progress(tp)
 
             #Milestone2
-            quest, skillbg, per = fmilestoneCal(1500, 1500)
-            st.subheader("Milestone2 :    " + str(per) +"% Completed\n Quests: " + str(quest) + "/20, Skill Badge: " + str(skillbg) + "/10")
-            if (quest >= 1000 and skillbg >= 500):
+            tq, ts, tp = fmsc(1500, 1500)
+            st.subheader("Milestone2 :    " + str(tp) +"% Completed\n Quests: " + str(tq) + "/20, Skill Badge: " + str(ts) + "/10")
+            if (tq >= 1000 and ts >= 500):
                 st.write("🥳 Congratulations! You have completed your 2nd Milestone 🎊🎊🎊")
             else:
-                st.progress(per)
+                st.progress(tp)
 
             # Milestone3
-            quest, skillbg, per = fmilestoneCal(3000, 3000)
-            st.subheader("Milestone3 :    " + str(per) +"% Completed\n Quests: " + str(quest) + "/30, Skill Badge: " + str(skillbg) + "/15")
-            if (quest == 2000 and skillbg == 1000):
+            tq, ts, tp = fmsc(3000, 3000)
+            st.subheader("Milestone3 :    " + str(tp) +"% Completed\n Quests: " + str(tq) + "/30, Skill Badge: " + str(ts) + "/15")
+            if (tq >= 2000 and ts >= 1000):
                 st.write("🥳 Congratulations! You have completed your 3rd Milestone 🎊🎊🎊")
             else:
-                st.progress(per)
+                st.progress(tp)
 
             # Ultimate Milestone
-            quest, skillbg, per = fmilestoneCal(4500, 4500)
-            st.subheader("Ultimate Milestone :    " + str(per) +"% Completed\n Quests: " + str(quest) + "/40, Skill Badge: " + str(skillbg) + "/20")
-            if (quest >= 3000 and skillbg >= 1500):
+            tq, ts, tp = fmsc(4500, 4500)
+            st.subheader("Ultimate Milestone :    " + str(tp) +"% Completed\n Quests: " + str(tq) + "/40, Skill Badge: " + str(ts) + "/20")
+            if (tq >= 3000 and ts >= 1500):
                 st.write("🥳 Congratulations! You have completed you Ultimate Milestone 🎊🎊🎊")
             else:
-                st.progress(per)
+                st.progress(tp)
 
-        elif (textInput != "" and status == False):
-            st.error("No Entry Found")
