@@ -134,6 +134,8 @@ def prizeWinners(limit):
             # lname = arr[-1]
             # name = fname + " " + lname
             finalList.append(arr.title())
+            publicURL.append(publicURL.title())
+            
     finalList.sort()
     return finalList, publicURL
     
@@ -298,7 +300,7 @@ elif (sidebarContent == "Milestone Leaderboard"):
             df["level"][i] = level
 
         with(m4):
-            flist, publicURL = prizeWinners(4)
+            flist , publicURL = prizeWinners(4)
             
             
             # st.subheader(m4_names)
