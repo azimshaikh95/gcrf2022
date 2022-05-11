@@ -301,7 +301,7 @@ elif (sidebarContent == "Milestone Leaderboard"):
             df["level"][i] = level
 
         with(m4):
-            flist = prizeWinners(4)
+            flist ,  = prizeWinners(4)
             
             
             # st.subheader(m4_names)
@@ -320,7 +320,7 @@ elif (sidebarContent == "Milestone Leaderboard"):
                 st.write("######")
                 #st.markdown("<h2> --------* Milestone 3 : Winners *-------- </h2>", unsafe_allow_html=True)
                 for i in flist:
-                    st.write("🔓 3️⃣ " + str(i)[0])
+                    st.write("🔓 3️⃣ " + str[0](i))
                     #st.write("🔸  " + str(i))
                 st.markdown("<hr>", unsafe_allow_html=True)
 
