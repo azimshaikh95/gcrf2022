@@ -284,23 +284,24 @@ elif (sidebarContent == "Milestone Leaderboard"):
 
         with(m4):
             flist = prizeWinners(4)
-            # st.subheader(m1_names)
+            # st.subheader(m4_names)
             if (len(flist) != 0):
                 st.markdown('<b class="big-font">🏆 Ultimate Milestone : Winners</b>', unsafe_allow_html=True)
                 st.write("######")
                 for i in flist:
-                    st.write("🔸  " + str(i))
+                    st.write("🔸 4️⃣ " + str(i))
                 st.markdown("<hr>", unsafe_allow_html=True)
 
         with(m3):
             flist = prizeWinners(3)
-            # st.subheader(m1_names)
+            # st.subheader(m3_names)
             if (len(flist) != 0):
                 st.markdown('<b class="big-font">🏆 Milestone 3 : Winners</b>', unsafe_allow_html=True)
                 st.write("######")
                 #st.markdown("<h2> --------* Milestone 3 : Winners *-------- </h2>", unsafe_allow_html=True)
                 for i in flist:
-                    st.write("🔸  " + str(i))
+                    st.write("🔸 3️⃣ " + str(i))
+                    #st.write("🔸  " + str(i))
                 st.markdown("<hr>", unsafe_allow_html=True)
 
         with(m2):
@@ -310,7 +311,7 @@ elif (sidebarContent == "Milestone Leaderboard"):
                 st.write("######")
                 #st.markdown("<h2> --------* Milestone 2 : Winners *-------- </h2>", unsafe_allow_html=True)
                 for i in flist:
-                    st.write("🔸  " + str(i))
+                    st.write("🔸 2️⃣ " + str(i))
 
                 st.markdown("<hr>", unsafe_allow_html=True)
 
@@ -323,7 +324,7 @@ elif (sidebarContent == "Milestone Leaderboard"):
                 #st.markdown("<h2> --------* Milestone 1 : Winners *-------- </h2>", unsafe_allow_html=True)
 
                 for i in flist:
-                    st.write("🔸  " + str(i) )
+                    st.write("🔸 1️⃣ " + str(i) )
 
                 st.markdown("<hr>", unsafe_allow_html=True)
                 st.write("#####")
