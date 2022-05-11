@@ -28,7 +28,7 @@ for i in range(len(df["Student Email"])):
 
 
 #WebApp -- "Milestone Leaderboard"
-sidebarContent = st.sidebar.radio("Menu", ["Progress Report", "Milestone Leaderboard", "Program Resources"])
+sidebarContent = st.sidebar.radio("Menu", ["Progress Report", "Milestone Leaderboard", "Program Resources", "Admin Panel"])
 #sidebarContent = st.sidebar.radio("Menu", ["Progress Report", "Milestone Leaderboard", "Generate Badge", "Program Resources"])
 #Progress Report Page
 st.markdown("""
@@ -439,3 +439,50 @@ else:
         st.image('images/prizes.png', use_column_width=True)
 
         st.info("Made With ❤️ by [MohammedAzim Shaikh](https://in.linkedin.com/in/mohammedazim-shaikh)")
+
+
+elif (sidebarContent == "Admin Zone"):
+    with(header):
+        st.image('images/banner.png', use_column_width=True)
+        st.markdown("<h1><b>Facilitator Leaderboard 🏃‍♂️ LJIET Ahmedabad</b></h1>", unsafe_allow_html=True)
+        st.write("Last Updated On: " + date + "-2021")
+        st.write("#####")
+
+    with(login):
+        st.warning("Only Facilitator are allowed to enter this zone !")
+        textInput = st.text_input("Enter Secret Code").lower()
+        st.write("####")
+
+    status = False
+
+
+    if (textInput == "azim@ljku.edu.in" or textInput == "azim" or textInput == "azim@ljp" or textInput == "jayniyati2233@gmail.com" or textInput == "kirtankp1902@gmail.com"):
+    
+        ml0, ml1, ml2, ml3, ml4, questTotal, skillbgTotal, inactiveCount = showStats()
+
+        labels = ['Milestone0', 'Milestone1', 'Milestone2', 'Milestone3', 'Milestone4', 'Inactive']
+        values = [ml0, ml1, ml2, ml3, ml4, inactiveCount]
+        colors = ['cyan', 'blue', 'green', 'orange', 'gold', 'red']
+
+        fig = go.Figure(data=[go.Pie(labels=labels, values=values)])
+        fig.update_traces(hoverinfo='label+percent', textinfo='value', marker=dict(colors=colors, line=dict(color='#000000', width=1)))
+        
+      
+        
+        st.write("## **📊 Facilitator Stats:** " + today.strftime("%B %d, %Y"))
+        st.write("####")
+        st.write("**No. of Quest completions:** " + str(questTotal))
+        st.write("**No. of Skill Badge completions:** " + str(skillbgTotal))
+        st.write("**Total Count:** " + str(questTotal + skillbgTotal))
+        st.write("**Milestone 1 Achievers:** " + str(ml1))
+        st.write("**Milestone 2 Achievers:** " + str(ml2))
+        st.write("**Milestone 3 Achievers:** " + str(ml3))
+        st.write("**Milestone 4 Achievers:** " + str(ml4))
+        st.write("**Total Achievers:** " + str(ml1 + ml2 + ml3 + ml4))
+        st.write("**Milestone 1 In Progress:** " + str(ml0))
+        st.write("**Inactive Students:** " + str(inactiveCount))
+        st.write("**Total Students Enrolled:** " + str(ml0 + ml1 + ml2 + ml3 + ml4 + inactiveCount))
+        st.plotly_chart(fig)
+        export_as_pdf = st.button("Export Report")
+        
+        
