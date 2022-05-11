@@ -130,10 +130,24 @@ def prizeWinners(limit):
             arr = str(df["Student Name"][i]).split()
             fname = arr[0]
             lname = arr[-1]
-            name = fname + " "+ lname[0] + "."
+            name = fname + " " + lname
             finalList.append(name)
     finalList.sort()
     return finalList
+    
+    
+# def prizeWinners(limit):
+    # finalList =[]
+    # for i in range(len(df)):
+        # if(df["level"][i] == limit):
+            # arr = str(df["Student Name"][i]).split()
+            # fname = arr[0]
+            # lname = arr[-1]
+            # name = fname + " "+ lname[0] + "."
+            # finalList.append(name)
+    # finalList.sort()
+    # return finalList
+    
 
 
 if (sidebarContent == "Progress Report"):
@@ -254,8 +268,7 @@ elif (sidebarContent == "Milestone Leaderboard"):
         st.plotly_chart(fig)
         export_as_pdf = st.button("Export Report")
         
-
-
+        
 
     for i in df["Student Email"]:
         if( i == textInput or textInput == "azim"):
