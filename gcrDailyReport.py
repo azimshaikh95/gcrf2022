@@ -494,7 +494,7 @@ elif (sidebarContent == "Admin Zone"):
             st.balloons()
 
         #Milestone1
-        quest, skillbg, per = fmilestoneCal((750, 750)            
+        quest, skillbg, per = fmilestoneCal(750, 750)            
         st.subheader("Milestone1 :    " + str(per) +"% Completed\n Quests: " + str(quest)+ "/10, Skill Badge: " + str(skillbg)+ "/5")
         if(quest >= 500 and skillbg >= 250):
             st.write("🥳 Congratulations! You have completed your 1st Milestone 🎊🎊🎊")
