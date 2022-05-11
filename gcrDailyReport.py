@@ -478,9 +478,9 @@ def fmilestoneCal(tquest, tskillbg):
     frquest = int(questTotal)
     frskillbg = int(skillbgTotal)
     #if (int(df["# of Quests Completed"][tindex]) >= tquest):
-        frquest = tquest
+    frquest = tquest
     #if (int(df["# of Skill Badges Completed"][tindex]) >= tskillbg):
-        frskillbg = tskillbg
+    frskillbg = tskillbg
     per = int(((frquest + frskillbg) / (tquest+tskillbg)) * 100)
     return frquest, frskillbg, fper
 
