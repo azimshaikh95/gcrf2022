@@ -486,7 +486,7 @@ def fmilestoneCal(tquest, tskillbg):
 
 
 
-        if(textInput != "" and status):
+ 
             
 
             st.markdown("<hr>", unsafe_allow_html=True)
@@ -530,8 +530,7 @@ def fmilestoneCal(tquest, tskillbg):
             else:
                 st.progress(per)
 
-        elif (textInput != "" and status == False):
-            st.error("No Entry Found")
+
             
             ###
         
