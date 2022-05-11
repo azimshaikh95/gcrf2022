@@ -476,6 +476,9 @@ elif (sidebarContent == "Admin Zone"):
         elif (textInput != "" ):
             st.error("Sorry, we won't be able to enter you to Admin Zone unless and until you are a Facilitator at LJ Institute of Engineering & Technology, Ahmedabad.")
         
+        else:
+            st.write("aa")
+        
 
 
 else:  
