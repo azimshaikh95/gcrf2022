@@ -445,7 +445,7 @@ elif (sidebarContent == "Admin Zone"):
 
     with(login):
         st.warning("Only Facilitator are allowed to enter this zone !")
-        textInput = st.text_input("Enter Secret Code").lower()
+        textInput = st.text_input("Enter Secret Code", type="password").lower()
         st.write("####")
 
     status = False
@@ -490,7 +490,7 @@ elif (sidebarContent == "Admin Zone"):
         st.markdown('<b class="big-font">Facilitator Milestone Status</b>', unsafe_allow_html=True)
 
         tq, ts, tp = fmsc(500, 250)
-        # st.subheader("You have completed " + str(tq) + " Quests and " + str(ts) +" Skill Badges.")
+        st.subheader("You have completed " + str(tq) + " Quests and " + str(ts) +" Skill Badges.")
         if(tq >= 500 and ts >= 250):
             st.balloons()
 
