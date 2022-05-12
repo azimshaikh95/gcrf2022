@@ -490,7 +490,7 @@ elif (sidebarContent == "Admin Zone"):
         st.markdown('<b class="big-font">Facilitator Milestone Status</b>', unsafe_allow_html=True)
 
         tq, ts, tp = fmsc(500, 250)
-        st.subheader("You have completed " + str(tq) + " Quests and " + str(ts) +" Skill Badges.")
+        # st.subheader("You have completed " + str(tq) + " Quests and " + str(ts) +" Skill Badges.")
         if(tq >= 500 and ts >= 250):
             st.balloons()
 
