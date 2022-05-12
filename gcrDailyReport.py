@@ -143,7 +143,7 @@ def prizeWinners(limit):
 def fmsc(tq, ts):
     frquest = int(questTotal)
     frskillbg = int(skillbgTotal)
-    if (uestTotal >= tq):
+    if (questTotal >= tq):
         frquest = tq
     if (skillbgTotal >= ts):
         frskillbg = ts
