@@ -498,6 +498,7 @@ elif (sidebarContent == "Admin Zone"):
         tq, ts, tp = fmsc(500, 250)            
         st.subheader("Milestone1 :    " + str(tp) +"% Completed\n Quests: " + str(tq)+ "/500, Skill Badge: " + str(ts)+ "/250")
         if(tq >= 500 and ts >= 250):
+            st.progress(tp)
             st.write("🥳 Congratulations! You have completed your 1st Milestone 🎊🎊🎊")
         else:
             st.progress(tp)
