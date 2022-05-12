@@ -141,11 +141,11 @@ def prizeWinners(limit):
 
     
 def fmsc(tq, ts):
-    frquest = str(questTotal)
-    frskillbg = str(skillbgTotal)
-    if (str(questTotal) >= tq):
+    frquest = int(questTotal)
+    frskillbg = int(skillbgTotal)
+    if (int(questTotal) >= tq):
         frquest = quest
-    if (str(skillbgTotal) >= ts):
+    if (int(skillbgTotal) >= ts):
         frskillbg = skillbg
     fper = int(((frquest + frskillbg) / (tq+ts)) * 100)
     return frquest, frskillbg, fper
