@@ -147,7 +147,7 @@ def fmsc(tq, ts):
         frquest = tq
     if (skillbgTotal >= ts):
         frskillbg = ts
-    fper = int(((frquest + frskillbg) / (tq+ts)) * 100)
+    fper = int(((frquest + frskillbg) / (tq + ts)) * 100)
     return frquest, frskillbg, fper
     
     
@@ -496,7 +496,7 @@ elif (sidebarContent == "Admin Zone"):
 
         #Milestone1
         tq, ts, tp = fmsc(750, 750)            
-        st.subheader("Milestone1 :    " + str(tp) +"% Completed\n Quests: " + str(tq)+ "/10, Skill Badge: " + str(ts)+ "/5")
+        st.subheader("Milestone1 :    " + str(tp) +"% Completed\n Quests: " + str(tq)+ "/5, Skill Badge: " + str(ts)+ "/5")
         if(tq >= 500 and ts >= 250):
             st.write("🥳 Congratulations! You have completed your 1st Milestone 🎊🎊🎊")
         else:
@@ -519,8 +519,8 @@ elif (sidebarContent == "Admin Zone"):
             st.progress(tp)
 
         # Ultimate Milestone
-        tq, ts, tp = fmsc(4500, 4500)
-        st.subheader("Ultimate Milestone :    " + str(tp) +"% Completed\n Quests: " + str(tq) + "/40, Skill Badge: " + str(ts) + "/20")
+        tq, ts, tp = fmsc(3000, 1500)
+        st.subheader("Ultimate Milestone :    " + str(tp) +"% Completed\n Quests: " + str(tq) + "/3000, Skill Badge: " + str(ts) + "/1500")
         if (tq >= 3000 and ts >= 1500):
             st.write("🥳 Congratulations! You have completed you Ultimate Milestone 🎊🎊🎊")
         else:
