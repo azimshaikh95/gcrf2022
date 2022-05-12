@@ -8,8 +8,6 @@ st.set_page_config(layout="centered", page_icon="☁️", page_title="GoogleClou
 #Added by Azim
 from datetime import date
 today = date.today()
-import time
-
 
 
 #Variable Names
@@ -501,11 +499,6 @@ elif (sidebarContent == "Admin Zone"):
         st.subheader("Milestone1 :    " + str(tp) +"% Completed\n Quests: " + str(tq)+ "/500, Skill Badge: " + str(ts)+ "/250")
         if(tq >= 500 and ts >= 250):
             st.progress(tp)
-            my_bar = st.progress(0)
-
-            for percent_complete in range(100):
-                 time.sleep(0.1)
-                 my_bar.progress(percent_complete + 1)
             st.write("🥳 Congratulations! You have completed your 1st Milestone 🎊🎊🎊")
         else:
             st.progress(tp)
