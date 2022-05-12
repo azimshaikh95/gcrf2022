@@ -144,9 +144,9 @@ def fmsc(tq, ts):
     frquest = int(questTotal)
     frskillbg = int(skillbgTotal)
     if (int(questTotal) >= tq):
-        frquest = quest
+        frquest = tq
     if (int(skillbgTotal) >= ts):
-        frskillbg = skillbg
+        frskillbg = ts
     fper = int(((frquest + frskillbg) / (tq+ts)) * 100)
     return frquest, frskillbg, fper
     
