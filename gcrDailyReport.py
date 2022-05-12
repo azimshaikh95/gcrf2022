@@ -489,30 +489,30 @@ elif (sidebarContent == "Admin Zone"):
 
         st.markdown('<b class="big-font">Facilitator Milestone Status</b>', unsafe_allow_html=True)
 
-        tq, ts, tp = fmsc(750, 750)
+        tq, ts, tp = fmsc(500, 250)
         st.subheader("You have completed " + str(tq) + " Quests and " + str(ts) +" Skill Badges.")
         if(tq >= 500 and ts >= 250):
             st.balloons()
 
         #Milestone1
-        tq, ts, tp = fmsc(750, 750)            
-        st.subheader("Milestone1 :    " + str(tp) +"% Completed\n Quests: " + str(tq)+ "/5, Skill Badge: " + str(ts)+ "/5")
+        tq, ts, tp = fmsc(500, 250)            
+        st.subheader("Milestone1 :    " + str(tp) +"% Completed\n Quests: " + str(tq)+ "/500, Skill Badge: " + str(ts)+ "/250")
         if(tq >= 500 and ts >= 250):
             st.write("🥳 Congratulations! You have completed your 1st Milestone 🎊🎊🎊")
         else:
             st.progress(tp)
 
         #Milestone2
-        tq, ts, tp = fmsc(1500, 1500)
-        st.subheader("Milestone2 :    " + str(tp) +"% Completed\n Quests: " + str(tq) + "/20, Skill Badge: " + str(ts) + "/10")
+        tq, ts, tp = fmsc(1000, 500)
+        st.subheader("Milestone2 :    " + str(tp) +"% Completed\n Quests: " + str(tq) + "/1000, Skill Badge: " + str(ts) + "/500")
         if (tq >= 1000 and ts >= 500):
             st.write("🥳 Congratulations! You have completed your 2nd Milestone 🎊🎊🎊")
         else:
             st.progress(tp)
 
         # Milestone3
-        tq, ts, tp = fmsc(3000, 3000)
-        st.subheader("Milestone3 :    " + str(tp) +"% Completed\n Quests: " + str(tq) + "/30, Skill Badge: " + str(ts) + "/15")
+        tq, ts, tp = fmsc(2000, 1000)
+        st.subheader("Milestone3 :    " + str(tp) +"% Completed\n Quests: " + str(tq) + "/2000, Skill Badge: " + str(ts) + "/1000")
         if (tq >= 2000 and ts >= 1000):
             st.write("🥳 Congratulations! You have completed your 3rd Milestone 🎊🎊🎊")
         else:
