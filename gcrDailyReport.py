@@ -254,7 +254,9 @@ elif (sidebarContent == "Milestone Leaderboard"):
 
     status = False
 
-    if (textInput == "azim@ljku.edu.in" or textInput == "azim" or textInput == "azim@ljp" or textInput == "jayniyati2233@gmail.com" or textInput == "kirtankp1902@gmail.com"):
+    # if (textInput == "azim@ljku.edu.in" or textInput == "azim" or textInput == "azim@ljp" or textInput == "jayniyati2233@gmail.com" or textInput == "kirtankp1902@gmail.com"):
+    
+    if ( textInput == st.secrets["mail_fac1"] or textInput == st.secrets["mail_fac2"] or textInput == st.secrets["mail_fac3"] or textInput == st.secrets["mail_fac4"] or textInput == st.secrets["mail_fac5"] ):
     
         ml0, ml1, ml2, ml3, ml4, questTotal, skillbgTotal, inactiveCount = showStats()
 
