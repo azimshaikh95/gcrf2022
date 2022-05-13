@@ -453,7 +453,7 @@ elif (sidebarContent == "Admin Zone"):
     status = False
 
 
-    if (textInput == "ljku" ):
+    if (textInput == st.secrets["app_secret"] ):
     
         ml0, ml1, ml2, ml3, ml4, questTotal, skillbgTotal, inactiveCount = showStats()
 
