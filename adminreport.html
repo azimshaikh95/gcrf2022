@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);html{width:100vw}body{margin:0;padding:0;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:hidden}body,button,input{font-family:"Poppins",sans-serif}
+
+#gcrf {
+  border-collapse: collapse;
+  width: 90%;  
+  font-family: font-family:"Poppins",sans-serif;
+}
+
+#gcrf td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#gcrf tr:nth-child(even){background-color: #f2f2f2;}
+#gcrf th:hover {background-color: #FF3E30;}
+#gcrf tr:hover {background-color: #F7B529;}
+
+#gcrf th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #176BEF;
+  color: white;
+}
+
+h1 , h2, h3 {
+font-weight: bold;
+margin-top: 0px;
+margin-bottom: 10px;
+text-align: center;
+}
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+
+</style>
+</head>
+<body>
+
+<br>
+<h1>LJIET 🏃‍♂️ Facilitator Leaderboard</h1>
+<h3>Google Cloud Ready Faciliator Program 2022</h3>
+<hr>
+<br>
+
+<h2>📊 Facilitator Stats: {{ date }} </h2>
+<table id=gcrf class=center>
+	<tbody>
+		<tr>
+			<th>No. of Quest Completions</th>
+			<td>{{ AAA }}</td>
+		</tr>
+		<tr>
+			<th>No. of Skill Badge Completions</th>
+			<td>{{ AAA }}</td>
+		</tr>
+		<tr>
+			<th>Total Count</th>
+			<td>{{ AAA }}</td>
+		</tr>
+		<tr>
+			<th>Milestone 1 Achievers</th>
+			<td>{{ AAA }}</td>
+		</tr>
+		<tr>
+			<th>Milestone 2 Achievers</th>
+			<td>{{ AAA }}</td>
+		</tr>
+		<tr>
+			<th>Milestone 3 Achievers</th>
+			<td>{{ AAA }}</td>
+		</tr>
+		<tr>
+			<th>Milestone 4 Achievers</th>
+			<td>{{ AAA }}</td>
+		</tr>
+		<tr>
+			<th>Total Achievers</th>
+			<td>{{ AAA }}</td>
+		</tr>
+		<tr>
+			<th>Milestone 1 in Progress</th>
+			<td>{{ AAA }}</td>
+		</tr>
+		<tr>
+			<th>Inactive Students</th>
+			<td>{{ AAA }}</td>
+		</tr>
+		<tr>
+			<th>Total Students Enrolled</th>
+			<td>{{ AAA }}</td>
+		</tr>
+	</tbody>
+
+</table>
+
+
+<br>
+
+<table id=gcrf class=center>
+<tbody >
+
+		<tr >
+			<th>Subject Code and Name</th>
+			<th>Theory Grade</th>
+			<th>Practical Grade</th>
+			<th>Overall Grade</th>
+		</tr>
+
+		<tr>
+			<td>{{ Sub1 }}</td>
+			<td>{{ Mark_1_TH }}</td>
+			<td>{{ Mark_1_PR }}</td>
+			<td>{{ Mark_1_OA }}</td>
+		</tr>
+
+		<tr>
+			<td>{{ Sub2 }}</td>
+			<td>{{ Mark_2_TH }}</td>
+			<td>{{ Mark_2_PR }}</td>
+			<td>{{ Mark_2_OA }}</td>
+		</tr>
+
+		<tr>
+			<td>{{ Sub3 }}</td>
+			<td>{{ Mark_3_TH }}</td>
+			<td>{{ Mark_3_PR }}</td>
+			<td>{{ Mark_3_OA }}</td>
+		</tr>
+
+		<tr>
+			<td>{{ Sub4 }}</td>
+			<td>{{ Mark_4_TH }}</td>
+			<td>{{ Mark_4_PR }}</td>
+			<td>{{ Mark_4_OA }}</td>
+		</tr>
+
+		<tr>
+			<td>{{ Sub5 }}</td>
+			<td>{{ Mark_5_TH }}</td>
+			<td>{{ Mark_5_PR }}</td>
+			<td>{{ Mark_5_OA }}</td>
+		</tr>
+
+		<tr>
+			<td>{{ Sub6 }}</td>
+			<td>{{ Mark_6_TH }}</td>
+			<td>{{ Mark_6_PR }}</td>
+			<td>{{ Mark_6_OA }}</td>
+		</tr>
+
+		<!--tr>
+			<td>{{ Sub7 }}</td>
+			<td>{{ Mark_7_TH }}</td>
+			<td>{{ Mark_7_PR }}</td>
+			<td>{{ Mark_7_OA }}</td>
+		</tr>
+
+		<tr>
+			<td>{{ Sub8 }}</td>
+			<td>{{ Mark_8_TH }}</td>
+			<td>{{ Mark_8_PR }}</td>
+			<td>{{ Mark_8_OA }}</td>
+		</tr>
+
+		<tr>
+			<td>{{ Sub9 }}</td>
+			<td>{{ Mark_9_TH }}</td>
+			<td>{{ Mark_9_PR }}</td>
+			<td>{{ Mark_9_OA }}</td>
+		</tr>
+
+		<tr>
+			<td>{{ Sub10 }}</td>
+			<td>{{ Mark_10_TH }}</td>
+			<td>{{ Mark_10_PR }}</td>
+			<td>{{ Mark_10_OA }}</td>
+		</tr-->
+
+
+</tbody>
+</table>
+
+&nbsp;
+
+<table id=gcrf class=center>
+	<tbody>
+		
+		<tr>
+			<td>SPI:</td>
+			<td>{{ SPI }}</td>
+		</tr>
+		<tr>
+			<td>CPI:</td>
+			<td>{{ CPI }}</td>
+		</tr>
+		<tr>
+			<td>CGPA:</td>
+			<td>{{ CGPA }}</td>
+		</tr>
+		<tr>
+			<td>Status:</td>
+			<td>{{ Status }}</td>
+		</tr>
+		<tr>
+			<td>Current Backlog:</td>
+			<td>{{ CurrentBacklog }}</td>
+		</tr>
+		<tr>
+			<td>Total Backlog:</td>
+			<td>{{ TotalBacklog }}</td>
+		</tr>
+		<tr>
+			<td>Declaration Date:</td>
+			<td>{{ DeclarationDate }}</td>
+		</tr>
+
+	</tbody>
+</table>
+
+<br>
+
+<table id=gcrf class=center>
+	<tbody>
+		
+		<tr>
+		<td>Note: This is a computer-generated provisional result, please consider the hard-copy Grade Sheet as final result. Result queries will be entertained till 5-days from the result declaration date. No result queries will be entertained afterwards.</td>
+		</tr>
+	</tbody>
+</table>	
+
+
+</center>
+
+</body>
+</html>
