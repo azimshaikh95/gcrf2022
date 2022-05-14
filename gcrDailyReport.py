@@ -604,7 +604,7 @@ elif (sidebarContent == "Admin Zone"):
            csv,
            "file.csv",
            "text/csv",
-           key='download-csv
+           key='download-csv'
         )
         
         # st.markdown("<hr>", unsafe_allow_html=True)
