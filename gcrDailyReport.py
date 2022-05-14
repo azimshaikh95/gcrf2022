@@ -575,41 +575,27 @@ elif (sidebarContent == "Admin Zone"):
                  
             )
 
-        pdf = pdfkit.from_string(html, False)
-        # st.balloons()          
-        # if ( str(df["Status"][tindex]) == "Pass" ):
-            # st.balloons()  
-            # st.success("You have cleared the exam!")
-        # else:
-            # st.error("You haven't cleared the exam!")
-      
+            pdf = pdfkit.from_string(html, False)
+            # st.balloons()          
+            # if ( str(df["Status"][tindex]) == "Pass" ):
+                # st.balloons()  
+                # st.success("You have cleared the exam!")
+            # else:
+                # st.error("You haven't cleared the exam!")
+          
 
-        right.success("🎉 Your Result PDF Generated!")                 
-        right.download_button(
-            "🖨️ Download PDF",
-            data=pdf,
-            file_name="GCRF-LJIET-"+date+".pdf",
-            mime="application/octet-stream",
-        )
+            right.success("🎉 Your Result PDF Generated!")                 
+            right.download_button(
+                "🖨️ Download PDF",
+                data=pdf,
+                file_name="GCRF-LJIET-"+date+".pdf",
+                mime="application/octet-stream",
+            )
         
-        dfq = pd.read_csv("data/" + date + ".csv")
-        def convert_df(dfq):
-           return df.to_csv().encode('utf-8')
-
-
-        csv = convert_df(dfq)
-
-        st.download_button(
-           "Press to Download",
-           csv,
-           "file.csv",
-           "text/csv",
-           key='download-csv'
-        )
         
-        # st.markdown("<hr>", unsafe_allow_html=True)
-        # st.subheader("**🎁 Facilitator Prizes**")
-        # st.image('images/facilitator_prizes.png', use_column_width=True)
+        st.markdown("<hr>", unsafe_allow_html=True)
+        st.subheader("**🎁 Facilitator Prizes**")
+        st.image('images/facilitator_prizes.png', use_column_width=True)
         
         
         
