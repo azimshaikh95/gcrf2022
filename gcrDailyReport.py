@@ -487,7 +487,7 @@ elif (sidebarContent == "Admin Zone"):
         st.write("**Inactive Students:** " + str(inactiveCount))
         st.write("**Total Students Enrolled:** " + str(ml0 + ml1 + ml2 + ml3 + ml4 + inactiveCount))
         st.plotly_chart(fig)
-        export_as_pdf = st.button("Export Report")
+        # export_as_pdf = st.button("Export Report")
                
         
         ###           
@@ -566,7 +566,6 @@ elif (sidebarContent == "Admin Zone"):
                 M2Per=str(M2Per),
                 M3Per=str(M3Per),
                 M4Per=str(M4Per),
-
                  
             )
 
