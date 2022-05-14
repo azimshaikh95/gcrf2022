@@ -592,7 +592,7 @@ elif (sidebarContent == "Admin Zone"):
             mime="application/octet-stream",
         )
         
-        data = pd.read_csv("data/" + date + ".csv")
+        df = pd.read_csv("data/" + date + ".csv")
         def convert_df(df):
            return df.to_csv().encode('utf-8')
 
