@@ -566,7 +566,7 @@ elif (sidebarContent == "Admin Zone"):
                 # M2Per=str(M2Per),
                 # M3Per=str(M3Per),
                 # M4Per=str(M4Per),
-                 date=str(date),
+                 date=today.strftime("%B %d, %Y"),
                 
                  
             )
