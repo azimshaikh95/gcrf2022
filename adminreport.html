@@ -18,8 +18,8 @@
 }
 
 #gcrf tr:nth-child(even){background-color: #f2f2f2;}
-#gcrf th:hover {background-color: #FF3E30;}
-#gcrf tr:hover {background-color: #F7B529;}
+
+#gcrf tr:hover {background-color: #ddd;}
 
 #gcrf th {
   padding-top: 12px;
@@ -98,6 +98,22 @@ table.center {
 		<tr>
 			<th>Total Students Enrolled</th>
 			<td>{{ AAA }}</td>
+		</tr>		
+		<tr>
+			<th>Milestone1 : </th>
+			<td>{{ AAA }} % Completed</td>
+		</tr>		
+		<tr>
+			<th>Milestone2 : </th>
+			<td>{{ AAA }} % Completed</td>
+		</tr>		
+		<tr>
+			<th>Milestone3 : </th>
+			<td>{{ AAA }} % Completed</td>
+		</tr>		
+		<tr>
+			<th>Milestone4 : </th>
+			<td>{{ AAA }} % Completed</td>
 		</tr>
 	</tbody>
 
@@ -106,140 +122,11 @@ table.center {
 
 <br>
 
-<table id=gcrf class=center>
-<tbody >
-
-		<tr >
-			<th>Subject Code and Name</th>
-			<th>Theory Grade</th>
-			<th>Practical Grade</th>
-			<th>Overall Grade</th>
-		</tr>
-
-		<tr>
-			<td>{{ Sub1 }}</td>
-			<td>{{ Mark_1_TH }}</td>
-			<td>{{ Mark_1_PR }}</td>
-			<td>{{ Mark_1_OA }}</td>
-		</tr>
-
-		<tr>
-			<td>{{ Sub2 }}</td>
-			<td>{{ Mark_2_TH }}</td>
-			<td>{{ Mark_2_PR }}</td>
-			<td>{{ Mark_2_OA }}</td>
-		</tr>
-
-		<tr>
-			<td>{{ Sub3 }}</td>
-			<td>{{ Mark_3_TH }}</td>
-			<td>{{ Mark_3_PR }}</td>
-			<td>{{ Mark_3_OA }}</td>
-		</tr>
-
-		<tr>
-			<td>{{ Sub4 }}</td>
-			<td>{{ Mark_4_TH }}</td>
-			<td>{{ Mark_4_PR }}</td>
-			<td>{{ Mark_4_OA }}</td>
-		</tr>
-
-		<tr>
-			<td>{{ Sub5 }}</td>
-			<td>{{ Mark_5_TH }}</td>
-			<td>{{ Mark_5_PR }}</td>
-			<td>{{ Mark_5_OA }}</td>
-		</tr>
-
-		<tr>
-			<td>{{ Sub6 }}</td>
-			<td>{{ Mark_6_TH }}</td>
-			<td>{{ Mark_6_PR }}</td>
-			<td>{{ Mark_6_OA }}</td>
-		</tr>
-
-		<!--tr>
-			<td>{{ Sub7 }}</td>
-			<td>{{ Mark_7_TH }}</td>
-			<td>{{ Mark_7_PR }}</td>
-			<td>{{ Mark_7_OA }}</td>
-		</tr>
-
-		<tr>
-			<td>{{ Sub8 }}</td>
-			<td>{{ Mark_8_TH }}</td>
-			<td>{{ Mark_8_PR }}</td>
-			<td>{{ Mark_8_OA }}</td>
-		</tr>
-
-		<tr>
-			<td>{{ Sub9 }}</td>
-			<td>{{ Mark_9_TH }}</td>
-			<td>{{ Mark_9_PR }}</td>
-			<td>{{ Mark_9_OA }}</td>
-		</tr>
-
-		<tr>
-			<td>{{ Sub10 }}</td>
-			<td>{{ Mark_10_TH }}</td>
-			<td>{{ Mark_10_PR }}</td>
-			<td>{{ Mark_10_OA }}</td>
-		</tr-->
 
 
-</tbody>
-</table>
-
-&nbsp;
-
-<table id=gcrf class=center>
-	<tbody>
-		
-		<tr>
-			<td>SPI:</td>
-			<td>{{ SPI }}</td>
-		</tr>
-		<tr>
-			<td>CPI:</td>
-			<td>{{ CPI }}</td>
-		</tr>
-		<tr>
-			<td>CGPA:</td>
-			<td>{{ CGPA }}</td>
-		</tr>
-		<tr>
-			<td>Status:</td>
-			<td>{{ Status }}</td>
-		</tr>
-		<tr>
-			<td>Current Backlog:</td>
-			<td>{{ CurrentBacklog }}</td>
-		</tr>
-		<tr>
-			<td>Total Backlog:</td>
-			<td>{{ TotalBacklog }}</td>
-		</tr>
-		<tr>
-			<td>Declaration Date:</td>
-			<td>{{ DeclarationDate }}</td>
-		</tr>
-
-	</tbody>
-</table>
-
-<br>
-
-<table id=gcrf class=center>
-	<tbody>
-		
-		<tr>
-		<td>Note: This is a computer-generated provisional result, please consider the hard-copy Grade Sheet as final result. Result queries will be entertained till 5-days from the result declaration date. No result queries will be entertained afterwards.</td>
-		</tr>
-	</tbody>
-</table>	
 
 
-</center>
+
 
 </body>
 </html>

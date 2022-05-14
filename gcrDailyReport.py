@@ -535,6 +535,55 @@ elif (sidebarContent == "Admin Zone"):
         st.subheader("**🎁 Facilitator Prizes**")
         st.image('images/facilitator_prizes.png', use_column_width=True)
 
+        left, right = st.columns(2)
+    
+    
+        env = Environment(loader=FileSystemLoader("."), autoescape=select_autoescape())
+        template = env.get_template("adminreport.html")
+
+        left.info("Want to Save?")
+        submit = left.button("📝 Generate PDF")
+
+        if submit:
+            html = template.render(
+                questTotal=str(df["questTotal"][tindex]),
+                skillbgTotal=str(df["skillbgTotal"][tindex]),
+                questTotal + skillbgTotal=str(df["questTotal + skillbgTotal"][tindex]),
+                ml1=str(df["ml1"][tindex]),
+                ml2=str(df["ml2"][tindex]),
+                ml3=str(df["ml3"][tindex]),
+                ml4=str(df["ml4"][tindex]),
+                ml1 + ml2 + ml3 + ml4=str(df["ml1 + ml2 + ml3 + ml4"][tindex]),
+                ml0=str(df["ml0"][tindex]),
+                inactiveCount=str(df["inactiveCount"][tindex]),
+                ml0 + ml1 + ml2 + ml3 + ml4 + inactiveCount=str(df["ml0 + ml1 + ml2 + ml3 + ml4 + inactiveCount"][tindex]),
+                M1Per=str(df["M1Per"][tindex]),
+                M2Per=str(df["M2Per"][tindex]),
+                M3Per=str(df["M3Per"][tindex]),
+                M4Per=str(df["M4Per"][tindex]),
+                 
+            )
+
+            pdf = pdfkit.from_string(html, False)
+            # st.balloons()          
+            # if ( str(df["Status"][tindex]) == "Pass" ):
+                # st.balloons()  
+                # st.success("You have cleared the exam!")
+            # else:
+                # st.error("You haven't cleared the exam!")
+          
+
+            right.success("🎉 Your Result PDF Generated!")                 
+            right.download_button(
+                "🖨️ Download PDF",
+                data=pdf,
+                file_name="rp.pdf",
+                mime="application/octet-stream",
+            )
+        
+        
+        
+        
         
         
     elif (textInput != "" ):
