@@ -504,25 +504,28 @@ elif (sidebarContent == "Admin Zone"):
         #Milestone1
         tq, ts, tp = fmsc(500, 250)            
         st.subheader("Milestone1 :    " + str(tp) +"% Completed\n Quests: " + str(tq)+ "/500, Skill Badge: " + str(ts)+ "/250")
+        M1Per = str(tp)
         if(tq >= 500 and ts >= 250):
             st.progress(tp)
             st.write("🥳 Congratulations! You have completed your 1st Milestone 🎊🎊🎊")
-            M1Per = str(tp);
+            
         else:
             st.progress(tp)
 
         #Milestone2
         tq, ts, tp = fmsc(1000, 500)
         st.subheader("Milestone2 :    " + str(tp) +"% Completed\n Quests: " + str(tq) + "/1000, Skill Badge: " + str(ts) + "/500")
+        M2Per = str(tp)
         if (tq >= 1000 and ts >= 500):
-            st.write("🥳 Congratulations! You have completed your 2nd Milestone 🎊🎊🎊")
-            M2Per = int(tp);
+            st.write("🥳 Congratulations! You have completed your 2nd Milestone 🎊🎊🎊")            
         else:
             st.progress(tp)
+            
 
         # Milestone3
         tq, ts, tp = fmsc(2000, 1000)
         st.subheader("Milestone3 :    " + str(tp) +"% Completed\n Quests: " + str(tq) + "/2000, Skill Badge: " + str(ts) + "/1000")
+        M3Per = str(tp)
         if (tq >= 2000 and ts >= 1000):
             st.write("🥳 Congratulations! You have completed your 3rd Milestone 🎊🎊🎊")
             M3Per = str(tp);
@@ -532,6 +535,7 @@ elif (sidebarContent == "Admin Zone"):
         # Ultimate Milestone
         tq, ts, tp = fmsc(3000, 1500)
         st.subheader("Ultimate Milestone :    " + str(tp) +"% Completed\n Quests: " + str(tq) + "/3000, Skill Badge: " + str(ts) + "/1500")
+        M4Per = str(tp)
         if (tq >= 3000 and ts >= 1500):
             st.write("🥳 Congratulations! You have completed you Ultimate Milestone 🎊🎊🎊")
             M4Per = str(tp);
@@ -567,7 +571,7 @@ elif (sidebarContent == "Admin Zone"):
                 inactiveCount=str(inactiveCount),
                 te=str(ml0 + ml1 + ml2 + ml3 + ml4 + inactiveCount),
                 M1Per=str(M1Per),
-                M2Per=str(M2Per),
+                # M2Per=str(M2Per),
                 # M3Per=str(M3Per),
                 # M4Per=str(M4Per),
                 date=today.strftime("%B %d, %Y"),
