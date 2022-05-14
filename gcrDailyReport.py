@@ -592,12 +592,12 @@ elif (sidebarContent == "Admin Zone"):
             mime="application/octet-stream",
         )
         
-        df = pd.read_csv("data/" + date + ".csv")
-        def convert_df(df):
+        dfq = pd.read_csv("data/" + date + ".csv")
+        def convert_df(dfq):
            return df.to_csv().encode('utf-8')
 
 
-        csv = convert_df(df)
+        csv = convert_df(dfq)
 
         st.download_button(
            "Press to Download",
