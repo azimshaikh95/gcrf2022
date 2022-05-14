@@ -548,7 +548,7 @@ elif (sidebarContent == "Admin Zone"):
             html = template.render(
                 questTotal=str(questTotal),
                 skillbgTotal=str(skillbgTotal),
-                questTotal + skillbgTotal=str(questTotal + skillbgTotal),
+                qpluss=str(questTotal + skillbgTotal),
                 ml1=str(ml1),
                 ml2=str(ml2),
                 ml3=str(ml3),
