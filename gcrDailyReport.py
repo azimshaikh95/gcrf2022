@@ -562,10 +562,10 @@ elif (sidebarContent == "Admin Zone"):
                 ml0=str(ml0),
                 inactiveCount=str(inactiveCount),
                 te=str(ml0 + ml1 + ml2 + ml3 + ml4 + inactiveCount),
-                M1Per=str(M1Per),
-                M2Per=str(M2Per),
-                M3Per=str(M3Per),
-                M4Per=str(M4Per),
+                # M1Per=str(M1Per),
+                # M2Per=str(M2Per),
+                # M3Per=str(M3Per),
+                # M4Per=str(M4Per),
                  
             )
 
