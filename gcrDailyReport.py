@@ -605,7 +605,7 @@ elif (sidebarContent == "Admin Zone"):
            "file.csv",
            "text/csv",
            key='download-csv
-           )
+        )
         
         # st.markdown("<hr>", unsafe_allow_html=True)
         # st.subheader("**🎁 Facilitator Prizes**")
