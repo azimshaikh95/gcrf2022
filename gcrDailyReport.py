@@ -531,7 +531,8 @@ elif (sidebarContent == "Admin Zone"):
         
         ###
         
-        
+        st.subheader("**Facilitator Prizes**")
+        st.image('images/facilitator_prizes.png', use_column_width=True)
         
         
     elif (textInput != "" ):
@@ -556,6 +557,6 @@ else:
         #st.write("✅ [Solution Videos](https://docs.google.com/document/d/1B0iHlOd2LkuOW1j7dpfSW_GFAzR_jhUX-WnuqSwrXUA/edit)")
 
         st.subheader("**Prizes**")
-        st.image('images/prizes.png', use_column_width=True)
+        st.image('images/student_prizes.png', use_column_width=True)
 
         st.info("Made With ❤️ by [MohammedAzim Shaikh](https://in.linkedin.com/in/mohammedazim-shaikh)")
