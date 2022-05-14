@@ -592,10 +592,23 @@ elif (sidebarContent == "Admin Zone"):
             mime="application/octet-stream",
         )
         
+        data = pd.read_csv("data/" + date + ".csv")
+        def convert_df(df):
+           return df.to_csv().encode('utf-8')
+
+
+        csv = convert_df(df)
+
+        st.download_button(
+           "Press to Download",
+           csv,
+           "file.csv",
+           "text/csv",
+           key='download-csv
         
-        st.markdown("<hr>", unsafe_allow_html=True)
-        st.subheader("**🎁 Facilitator Prizes**")
-        st.image('images/facilitator_prizes.png', use_column_width=True)
+        # st.markdown("<hr>", unsafe_allow_html=True)
+        # st.subheader("**🎁 Facilitator Prizes**")
+        # st.image('images/facilitator_prizes.png', use_column_width=True)
         
         
         
