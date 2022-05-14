@@ -516,7 +516,7 @@ elif (sidebarContent == "Admin Zone"):
         st.subheader("Milestone2 :    " + str(tp) +"% Completed\n Quests: " + str(tq) + "/1000, Skill Badge: " + str(ts) + "/500")
         if (tq >= 1000 and ts >= 500):
             st.write("🥳 Congratulations! You have completed your 2nd Milestone 🎊🎊🎊")
-            M2Per = int(tp);
+            M2Per = str(tp);
         else:
             st.progress(tp)
 
@@ -525,7 +525,7 @@ elif (sidebarContent == "Admin Zone"):
         st.subheader("Milestone3 :    " + str(tp) +"% Completed\n Quests: " + str(tq) + "/2000, Skill Badge: " + str(ts) + "/1000")
         if (tq >= 2000 and ts >= 1000):
             st.write("🥳 Congratulations! You have completed your 3rd Milestone 🎊🎊🎊")
-            M3Per = int(tp);
+            M3Per = str(tp);
         else:
             st.progress(tp)
 
@@ -534,7 +534,7 @@ elif (sidebarContent == "Admin Zone"):
         st.subheader("Ultimate Milestone :    " + str(tp) +"% Completed\n Quests: " + str(tq) + "/3000, Skill Badge: " + str(ts) + "/1500")
         if (tq >= 3000 and ts >= 1500):
             st.write("🥳 Congratulations! You have completed you Ultimate Milestone 🎊🎊🎊")
-            M4Per = int(tp);
+            M4Per = str(tp);
         else:
             st.progress(tp)
         
