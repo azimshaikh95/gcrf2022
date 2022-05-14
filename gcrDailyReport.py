@@ -543,11 +543,7 @@ elif (sidebarContent == "Admin Zone"):
             st.progress(tp)
         
         ###
-        
-        st.markdown("<hr>", unsafe_allow_html=True)
-        st.subheader("**🎁 Facilitator Prizes**")
-        st.image('images/facilitator_prizes.png', use_column_width=True)
-
+           
         left, right = st.columns(2)
     
     
@@ -597,7 +593,9 @@ elif (sidebarContent == "Admin Zone"):
             )
         
         
-        
+        st.markdown("<hr>", unsafe_allow_html=True)
+        st.subheader("**🎁 Facilitator Prizes**")
+        st.image('images/facilitator_prizes.png', use_column_width=True)
         
         
         
