@@ -567,9 +567,9 @@ elif (sidebarContent == "Admin Zone"):
                 inactiveCount=str(inactiveCount),
                 te=str(ml0 + ml1 + ml2 + ml3 + ml4 + inactiveCount),
                 M1Per=str(M1Per),
-                M2Per=str(M2Per),
-                M3Per=str(M3Per),
-                M4Per=str(M4Per),
+                # M2Per=str(M2Per),
+                # M3Per=str(M3Per),
+                # M4Per=str(M4Per),
                 date=today.strftime("%B %d, %Y"),
                 
                  
