@@ -575,22 +575,22 @@ elif (sidebarContent == "Admin Zone"):
                  
             )
 
-            pdf = pdfkit.from_string(html, False)
-            # st.balloons()          
-            # if ( str(df["Status"][tindex]) == "Pass" ):
-                # st.balloons()  
-                # st.success("You have cleared the exam!")
-            # else:
-                # st.error("You haven't cleared the exam!")
-          
+        pdf = pdfkit.from_string(html, False)
+        # st.balloons()          
+        # if ( str(df["Status"][tindex]) == "Pass" ):
+            # st.balloons()  
+            # st.success("You have cleared the exam!")
+        # else:
+            # st.error("You haven't cleared the exam!")
+      
 
-            right.success("🎉 Your Result PDF Generated!")                 
-            right.download_button(
-                "🖨️ Download PDF",
-                data=pdf,
-                file_name="GCRF-LJIET-"+date+".pdf",
-                mime="application/octet-stream",
-            )
+        right.success("🎉 Your Result PDF Generated!")                 
+        right.download_button(
+            "🖨️ Download PDF",
+            data=pdf,
+            file_name="GCRF-LJIET-"+date+".pdf",
+            mime="application/octet-stream",
+        )
         
         
         st.markdown("<hr>", unsafe_allow_html=True)
