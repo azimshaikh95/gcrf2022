@@ -546,21 +546,22 @@ elif (sidebarContent == "Admin Zone"):
 
         if submit:
             html = template.render(
-                questTotal=str(df["questTotal"][tindex]),
-                skillbgTotal=str(df["skillbgTotal"][tindex]),
-                questTotal + skillbgTotal=str(df["questTotal + skillbgTotal"][tindex]),
-                ml1=str(df["ml1"][tindex]),
-                ml2=str(df["ml2"][tindex]),
-                ml3=str(df["ml3"][tindex]),
-                ml4=str(df["ml4"][tindex]),
-                ml1 + ml2 + ml3 + ml4=str(df["ml1 + ml2 + ml3 + ml4"][tindex]),
-                ml0=str(df["ml0"][tindex]),
-                inactiveCount=str(df["inactiveCount"][tindex]),
-                ml0 + ml1 + ml2 + ml3 + ml4 + inactiveCount=str(df["ml0 + ml1 + ml2 + ml3 + ml4 + inactiveCount"][tindex]),
-                M1Per=str(df["M1Per"][tindex]),
-                M2Per=str(df["M2Per"][tindex]),
-                M3Per=str(df["M3Per"][tindex]),
-                M4Per=str(df["M4Per"][tindex]),
+                questTotal=str(questTotal),
+                skillbgTotal=str(skillbgTotal),
+                questTotal + skillbgTotal=str(questTotal + skillbgTotal),
+                ml1=str(ml1),
+                ml2=str(ml2),
+                ml3=str(ml3),
+                ml4=str(ml4),
+                ta=str(ml1 + ml2 + ml3 + ml4),
+                ml0=str(ml0),
+                inactiveCount=str(inactiveCount),
+                te=str(ml0 + ml1 + ml2 + ml3 + ml4 + inactiveCount),
+                M1Per=str(M1Per),
+                M2Per=str(M2Per),
+                M3Per=str(M3Per),
+                M4Per=str(M4Per),
+
                  
             )
 
