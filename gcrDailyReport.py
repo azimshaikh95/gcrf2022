@@ -24,6 +24,16 @@ login = st.container()
 body = st.container()
 owners = st.container()
 
+#Hide Hamburger Menu
+hide_menu_style = """
+        <style>
+        #MainMenu {visibility: hidden;}
+        </style>
+        """
+st.markdown(hide_menu_style, unsafe_allow_html=True)
+
+
+
 #Reading the file
 data = pd.read_csv("data/" + date + ".csv")
 df = pd.DataFrame(data)
