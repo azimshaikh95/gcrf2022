@@ -588,7 +588,7 @@ elif (sidebarContent == "Admin Zone"):
             right.download_button(
                 "🖨️ Download PDF",
                 data=pdf,
-                file_name="GCRF-LJIET"+date+".pdf",
+                file_name="GCRF-LJIET-"+date+".pdf",
                 mime="application/octet-stream",
             )
         
