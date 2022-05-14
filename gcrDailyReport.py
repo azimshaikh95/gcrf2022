@@ -531,8 +531,11 @@ elif (sidebarContent == "Admin Zone"):
         
         ###
         
-        st.subheader("**Facilitator Prizes**")
-        st.image('images/facilitator_prizes.png', use_column_width=True)
+        # st.subheader("**Facilitator Prizes**")
+        # st.image('images/facilitator_prizes.png', use_column_width=True)
+        
+        st.subheader("**Prizes**")
+        st.image('images/student_prizes.png', use_column_width=True)
         
         
     elif (textInput != "" ):
