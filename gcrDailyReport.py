@@ -1,10 +1,11 @@
+import pdfkit
 import streamlit as st
 from PIL import Image
 import pandas as pd
 import plotly.graph_objects as go
 from jinja2 import Environment, PackageLoader, select_autoescape, FileSystemLoader, Template
 import os
-import pdfkit
+
 
 
 st.set_page_config(layout="centered", page_icon="☁️", page_title="GoogleCloudReady Progress Report")
