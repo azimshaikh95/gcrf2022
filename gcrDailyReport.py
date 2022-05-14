@@ -531,7 +531,7 @@ elif (sidebarContent == "Admin Zone"):
         
         ###
         
-        st.subheader("**Facilitator Prizes**")
+        st.subheader("**🎁 Facilitator Prizes**")
         st.image('images/facilitator_prizes.jpg', use_column_width=True)
 
         
