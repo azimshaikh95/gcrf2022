@@ -16,7 +16,11 @@ today = date.today()
 
 
 #Variable Names
+<<<<<<< HEAD
 date = "26-06"
+=======
+date = "25-06"
+>>>>>>> 8eb8d613a5b8c0bdaa1a989b7a7d789d631a60fe
 
 #Program Variables
 header = st.container()
