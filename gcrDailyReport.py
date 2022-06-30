@@ -16,7 +16,7 @@ today = date.today()
 
 
 #Variable Names
-date = "26-06"
+date = "30-06"
 
 
 #Program Variables
